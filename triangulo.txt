@@ -1,0 +1,8 @@
+.triangulo {
+    display: flex;
+    width: 150px;
+    height: 0px;
+    border-left: 500px solid transparent;
+    border-bottom: 900px solid rgb(216, 28, 28);
+    margin-left: 868px;
+}

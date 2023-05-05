@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
 body {
     margin: 0;
-    background-color: #d4d4d4;
+    background-color: rgba(0, 0, 0, 0.815);
+    /* background-color: #e3e1e1;*/
+    /*background-color: rgba(255, 160, 122, 0.211);*/
+    /*background-color: bisque;*/
+    /*background-color: rgba(255, 152, 115, 0.734);*/
+    /*background-color: rgba(233, 150, 122, 0.382);*/
 }
 
 /*.triangulo {
@@ -15,8 +22,8 @@ body {
 .navbar {
     display: flex;
     width: 100%;
-    height: 120px;
-    background-color: #DE0000;
+    height: 100px;
+    background-color: #c72f2f;
     margin: none;
     justify-content: space-between;
     margin: none;
@@ -24,15 +31,16 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
+
 
 .titulo {
     display: flex;
     margin-left: 45px;
     align-items: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
+    color: rgba(0, 0, 0, 0.834);
     font-size: 60px;
 }
 
@@ -58,13 +66,43 @@ body {
 .itens button{
     height: 50px;
     width: 120px;
-    background-color: #8E0000;
+    background-color: #4e0000;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-weight: 700;
     margin-left: 15px;
+}
+
+.container_imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem_home {
+    width: 94%;
+    height: 450px;
+    margin-top: 70px;
+    background-image: url(Imagens/imagem_home.jpg);
+}
+
+.imagem_home p {
+    font-size: 85px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 160px;
+    margin-top: 0px;
+    font-weight: 600;
+    color: black;
+}
+
+.slogan {
+    margin-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 120px;
+    color: rgb(0, 0, 0);
 }
 
 .container{
@@ -72,9 +110,16 @@ body {
     justify-content: center;
 }
 
+.titulo_ranking{
+    font-family: 'Vina Sans';
+    color: white;
+    margin-top: 70px;
+    font-size: 160px;
+}
+
 .quadrado {
     display: flex;
-    margin-top: 30px;
+    margin-top: 50px;
     height: 500px;
     width: 960px;
     background-color: #ffffff;
@@ -231,3 +276,59 @@ body {
     border-right: 1px solid rgb(0, 0, 0);
     margin-left: 28px;
 }
+
+.retangulo {
+    background-color: white;
+    width: 960px;
+    height: 530px;
+    margin-top: 70px;
+}
+
+.faixa_retangulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #DE0000;
+}
+
+.faixa_retangulo p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*.imagem_redonda {
+    margin: 10px;
+    margin-right: 20px;
+}*/
+
+.retangulo img {
+    border-radius: 50%;
+    margin-right: 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.artistas span{
+    margin-left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.artistas p{
+    display: inline-block;
+    margin: 0;
+    margin-left: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+.linha-vertical2 {
+    height: 500px;/*Altura da linha*/
+    border-left: 2px solid;/* Adiciona borda esquerda na div como ser fosse uma linha.*/
+    display: inline-block;
+  }

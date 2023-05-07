@@ -1,0 +1,23 @@
+retangulo do top 50 artistas (tentar arrumar depois)
+
+
+<div class="container">
+        <div class="retangulo">
+            <div class="faixa_retangulo">
+                <p> Top 50 Artistas </p>
+            </div>
+            <div class="imagem_redonda">
+                <div class="artistas">
+                    <img style="height: 130px;" width="130px" src="Imagens/anavitoria.jpg" title="ANAVITÓRIA"> <br>
+                    <span>1</span> <br>
+                    <p>ANAVITÓRIA</p>
+                    <div class="linha-vertical2"></div>
+                </div>
+                <img style="height: 130px;" width="130px" src="Imagens/djonga.jpg" alt="">
+                <img style="height: 130px;" width="130px" src="Imagens/redhot.jpg" alt="">
+                <img style="height: 130px;" width="130px" src="Imagens/eminem.jpg" alt="">
+                <img style="height: 130px;" width="130px" src="Imagens/lanadelrey.jpg" alt="">
+
+            </div>
+        </div>
+    </div>

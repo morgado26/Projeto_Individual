@@ -462,3 +462,62 @@ body {
     font-size: 18px;
     font-weight: 600;
 }
+
+/* ----------------------------------------------------------CADASTRO--------------------------------------------------------------------------- */
+
+.bodyCadastro {
+    background-image: url(Imagens/imagem_login.jpg);
+    background-size: cover;
+}
+
+.formboxCadastro h1 {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 5px;
+}
+
+.formboxCadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+    width: 400px;
+    margin-top: 40px;
+    background-color: #dc0202; 
+    border-radius: 9px;
+}
+
+.formboxCadastro p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.formboxCadastro input{
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 2.5px;
+    border-color: black;
+    border: solid;
+}
+
+.formboxCadastro button {
+    height: 30px;
+    width: 90px;
+    background-color: #262626;
+    font-weight: 750;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+
+.formboxCadastro a {
+    text-decoration: none;
+    margin-top: 8px;
+    color: white;
+    font-family: arial;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="titulo">
+            <b> <a href="index.html"> TOP 50 </a> </b>
+        </h1>
+        <div class="itens">
+            <p class="lista">
+                <a href=""> Rankings </a>
+            </p>
+
+            <p class="playlists">
+                <a href=""> Quiz </a>
+            </p>
+
+            <p>
+                <a href="login.html"> Login </a>
+            </p>
+
+            <p>
+                <button> <a href="cadastro.html">Cadastro</a> </button>
+            </p>
+        </div>
+    </div>
+
+    Que música é essa? <br> <br>
+
+    <button class="botao_errado" onclick="alternativa_errada()">Alternativa Errada</button>
+    <button class="botao_errado" onclick="alternativa_errada()">Alternativa Errada</button>
+    <button class="botao_certo" onclick="alternativa_certa()">Alternativa Certa</button>
+    <button class="botao_errado" onclick="alternativa_errada()">Alternativa Errada</button>
+    <button onclick="ver_pontos()">Ver minha pontuação</button>
+
+    <div id="exibir"></div>
+
+</body>
+
+</html>
+
+<script>
+    var pontos = 0;
+
+    function alternativa_errada() {
+        pontos += 0;
+    }
+
+    function alternativa_errada() {
+        pontos += 0;
+    }
+
+    const botaoCerto = document.querySelector(".botao_certo");
+    botaoCerto.addEventListener("click", function () {
+        pontos += 20;
+        botaoCerto.disabled = true;
+    });
+
+    function alternativa_errada() {
+        pontos += 0;
+    }
+
+    function ver_pontos(){
+        exibir.innerHTML = ``
+        exibir.innerHTML += `${pontos}`
+    }
+
+</script>

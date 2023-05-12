@@ -792,3 +792,71 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     border: none;
 }
+
+/* ----------------------------------------------------------Conhecer--------------------------------------------------------------------------- */
+
+.bodyCadastro {
+    background-image: url(../assets/imagens_site/imagem_login.jpg);
+    background-size: cover;
+}
+
+.formbox2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 440px;
+    width: 400px;
+    margin-top: 80px;
+    background-color: #c72f2f;
+    border-radius: 9px;
+}
+
+.formbox2 h1 {
+    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+.formbox2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.formbox2 input {
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 2.5px;
+    border-color: black;
+    border: solid;
+}
+
+.formbox2 button {
+    height: 30px;
+    width: 90px;
+    background-color: #262626;
+    font-weight: 750;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+.formbox2 a {
+    text-decoration: none;
+    margin-top: 8px;
+    color: white;
+    font-family: arial;
+}
+
+.vamos{
+    margin-left: 61px;
+    margin-top: 20px;
+}
+
+.formbox2 button{
+    margin-top: 40px;
+}

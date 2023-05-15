@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Artista</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="titulo">
+            <b> <a href="../index.html"> TOP 50 </a> </b>
+        </h1>
+        <div class="itens">
+            <p class="lista">
+                <a href=""> Rankings </a>
+            </p>
+
+            <p class="playlists">
+                <a href=""> Quiz </a>
+            </p>
+
+            <p>
+                <a href="../login.html"> Login </a>
+            </p>
+
+            <p>
+                <button> <a href="../cadastro.html">Cadastro</a> </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="container_pontuacao">
+        Sua pontuação: <div class="pontuacao" id="exibir"></div>
+    </div>
+
+    <div class="container">
+        <div class="regras">
+            Cada pergunta vale 20 pontos. <br>
+            <div class="container"> Se divirta! </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 1- Quem é esse? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/cazuza.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado1-1" onclick="alternativa_erradaUm()">Samuel Rosa</button>
+                    <button id="botao_certo_novacane" onclick="alternativa_certa()">Cazuza</button>
+                    <button id="botao_errado1-2" onclick="alternativa_erradaDois()">Belchior</button>
+                    <button id="botao_errado1-3" onclick="alternativa_erradaTres()">Jorge Ben Jor</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 2- Quem é essa? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/marisa_monte.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado2-1" onclick="alternativa_errada2Um()">Cássia Eller</button>
+                    <button id="botao_errado2-2" onclick="alternativa_errada2Dois()">Maria Gadú</button>
+                    <button id="botao_errado2-3" onclick="alternativa_errada2Tres()">Pitty</button>
+                    <button id="botao_certo_sutilmente" onclick="alternativa_certa2()">Marisa Monte</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 3- Quem é esse? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/jay-z.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado3-1" onclick="alternativa_errada3Um()">Kanye West</button>
+                    <button id="botao_errado3-2" onclick="alternativa_errada3Dois()">Eminem</button>
+                    <button id="botao_certo_jesuschorou" onclick="alternativa_certa3()">Jay-Z</button>
+                    <button id="botao_errado3-3" onclick="alternativa_errada3Tres()">Drake</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 4- Quem é essa? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/elis_regina.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado4-1" onclick="alternativa_errada4Um()">Elza Soares</button>
+                    <button id="botao_errado4-2" onclick="alternativa_errada4Dois()">Elba Ramalho</button>
+                    <button id="botao_errado4-3" onclick="alternativa_errada4Tres()">Maria Betânia</button>
+                    <button id="botao_certo_runaway" onclick="alternativa_certa4()">Elis Regina</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 5- Quem é essa? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/lana_del_rey.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado5-1" onclick="alternativa_errada5Um()">SZA</button>
+                    <button id="botao_errado5-2" onclick="alternativa_errada5Dois()">Billie Eilish</button>
+                    <button id="botao_certo_vivalavida" onclick="alternativa_certa5()">Lana Del Rey</button>
+                    <button id="botao_errado5-3" onclick="alternativa_errada5Tres()">Rihanna</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 6- Quem é esse? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/baco_exu.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_cartaaberta" onclick="alternativa_certa6()">Baco Exu</button>
+                    <button id="botao_errado6-1" onclick="alternativa_errada6Um()">Djonga</button>
+                    <button id="botao_errado6-2" onclick="alternativa_errada6Dois()">BK</button>
+                    <button id="botao_errado6-3" onclick="alternativa_errada6Tres()">Criolo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 7- Quem é esse? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/cartola.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado7-1" onclick="alternativa_errada7Um()">Belchior</button>
+                    <button id="botao_errado7-2" onclick="alternativa_errada7Dois()">Caetano</button>
+                    <button id="botao_certo_aindaecedo" onclick="alternativa_certa7()">Cartola</button>
+                    <button id="botao_errado7-3" onclick="alternativa_errada7Tres()">Raul Seixas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 8- Quem é essa? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/adele.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_agentejunto" onclick="alternativa_certa8()">Adele</button>
+                    <button id="botao_errado8-1" onclick="alternativa_errada8Um()">Beyoncé</button>
+                    <button id="botao_errado8-2" onclick="alternativa_errada8Dois()">Madonna</button>
+                    <button id="botao_errado8-3" onclick="alternativa_errada8Tres()">Rihanna</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 9- Quem é esse? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/natiruts.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado9-1" onclick="alternativa_errada9Um()">Cidade Verde</button>
+                    <button id="botao_errado9-2" onclick="alternativa_errada9Dois()">Maneva</button>
+                    <button id="botao_certo_allstar" onclick="alternativa_certa9()">Natiruts</button>
+                    <button id="botao_errado9-3" onclick="alternativa_errada9Tres()">Armandinho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta">
+            <div class="faixa_das_perguntas">
+                <span> 10- Quem é esse? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <audio src="../assets/audios/queen.mp4" controls></audio>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado10-1" onclick="alternativa_errada10Um()">Elton Jhon</button>
+                    <button id="botao_certo_intro" onclick="alternativa_certa10()">Queen</button>
+                    <button id="botao_errado10-2" onclick="alternativa_errada10Dois()">AC/DC</button>
+                    <button id="botao_errado10-3" onclick="alternativa_errada10Tres()">Bon Jovi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_pontuacao">
+        Sua pontuação final foi de: <div class="pontuacao" id="exibir2"></div>
+    </div>
+
+    <div class="container">
+        <div class="respostas_e_placar">
+            <p> <b style="font-size: 30px;"> Ver Respostas </b> </p>
+            <div id="exibir_respostas"></div>
+            <div class="container_botao_respostas">
+                <button onclick="mostrar_respostas()">Respostas</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var pontos = 0;
+    var pode_votar = true;
+    var pode_votar2 = true;
+    var pode_votar3 = true;
+    var pode_votar4 = true;
+    var pode_votar5 = true;
+    var pode_votar6 = true;
+    var pode_votar7 = true;
+    var pode_votar8 = true;
+    var pode_votar9 = true;
+    var pode_votar10 = true;
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_erradaUm() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_erradaDois() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_erradaTres() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa() {
+        if (pode_votar == true) {
+            pontos += 20;
+            pode_votar = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_novacane");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada2Um() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada2Dois() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada2Tres() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa2() {
+        if (pode_votar2 == true) {
+            pontos += 20;
+            pode_votar2 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_sutilmente");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada3Um() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada3Dois() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada3Tres() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa3() {
+        if (pode_votar3 == true) {
+            pontos += 20;
+            pode_votar3 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_jesuschorou");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada4Um() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada4Dois() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada4Tres() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa4() {
+        if (pode_votar4 == true) {
+            pontos += 20;
+            pode_votar4 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_runaway");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada5Um() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada5Dois() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada5Tres() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa5() {
+        if (pode_votar5 == true) {
+            pontos += 20;
+            pode_votar5 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_vivalavida");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada6Um() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada6Dois() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada6Tres() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa6() {
+        if (pode_votar6 == true) {
+            pontos += 20;
+            pode_votar6 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_cartaaberta");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada7Um() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada7Dois() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada7Tres() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa7() {
+        if (pode_votar7 == true) {
+            pontos += 20;
+            pode_votar7 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_aindaecedo");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada8Um() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada8Dois() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada8Tres() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa8() {
+        if (pode_votar8 == true) {
+            pontos += 20;
+            pode_votar8 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_agentejunto");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada9Um() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada9Dois() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada9Tres() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa9() {
+        if (pode_votar9 == true) {
+            pontos += 20;
+            pode_votar9 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_allstar");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada10Um() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada10Dois() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada10Tres() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa10() {
+        if (pode_votar10 == true) {
+            pontos += 20;
+            pode_votar10 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_intro");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+
+    function ver_pontos() {
+        exibir.innerHTML = ``
+        exibir.innerHTML += `${pontos} pontos`
+        exibir2.innerHTML = ``
+        exibir2.innerHTML += `${pontos} pontos`
+    }
+
+    function mostrar_respostas() {
+        if (pode_votar == false && pode_votar2 == false && pode_votar3 == false && pode_votar4 == false && pode_votar5 == false &&
+            pode_votar6 == false && pode_votar7 == false && pode_votar8 == false && pode_votar9 == false && pode_votar10 == false) {
+            exibir_respostas.innerHTML = `
+                <p>
+                1. Cazuza <br>
+                2. Marisa Monte <br>
+                3. Jay-Z <br>
+                4. Elis Regina <br>
+                5. Lana Del Rey <br>
+                6. Baco Exu <br>
+                7. Cartola <br>
+                8. Adele <br>
+                9. Natiruts <br>
+                10. Queen
+                </p>
+                `
+        }
+
+        else {
+            exibir_respostas.innerHTML = `<span> Você ainda não respondeu tudo! </span>`
+        }
+    }
+
+</script>

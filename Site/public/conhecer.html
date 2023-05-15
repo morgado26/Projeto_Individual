@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conhecer Melhor</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body class="bodyCadastro">
@@ -28,9 +29,9 @@
     <div class="container_card">
         <div class="formbox2">
             <h1> <div class="vamos">Vamos nos</div> conhecer melhor! </h1>
-           <p> Sua música preferida:</p> <input id="ipt_musica_preferida">
-           <p> Seu álbum preferido: </p> <input id="ipt_album_preferido">
-           <button><a href="index.html">Pronto!</a></button>
+           <p> Sua música preferida:</p> <input placeholder="Música" id="ipt_musica_preferida">
+           <p> Seu álbum preferido: </p> <input placeholder="Álbum" id="ipt_album_preferido">
+           <button onclick="preferida()">Pronto!</button>
         </div>
     </div>
 
@@ -39,6 +40,66 @@
 </html>
 
 <script>
-    var musica_preferida = ipt_musica_preferida.value;
-    var album_preferido = text.toLowerCase(ipt_album_preferido.value);
+   
+function preferida() {
+    //aguardar();
+
+    //Recupere o valor da nova input pelo nome do id
+    // Agora vá para o método fetch logo abaixo
+    var musicaVar = ipt_musica_preferida.value
+    var albumVar = ipt_album_preferido.value
+
+    if (musicaVar == "" || albumVar == "") {
+        //cardErro.style.display = "block"
+        swal("Ops", "Preencha todos os campos", "error")
+
+        finalizarAguardar();
+        return false;
+    }
+    
+    else {
+        setInterval('oi', 5000)
+        // Enviando o valor da nova input
+        fetch("/usuarios/preferida", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                musicaServer: musicaVar,
+                albumServer: albumVar,
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+                //cardErro.style.display = "block";
+                swal("Parábens", "Cadastro realizado com sucesso redirecionando a tela de login 😄...!", "success");
+
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, 3000)
+
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                swal("Ops", "Mais de um usuário com o mesmo login e senha!")
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+}
+
+//function sumirMensagem() {
+    //cardErro.style.display = "none"
+//}
+
 </script>

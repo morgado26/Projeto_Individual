@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete a Música</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="titulo">
+            <b> <a href="../index.html"> TOP 50 </a> </b>
+        </h1>
+        <div class="itens">
+            <p class="lista">
+                <a href=""> Rankings </a>
+            </p>
+
+            <p class="playlists">
+                <a href=""> Quiz </a>
+            </p>
+
+            <p>
+                <a href="../login.html"> Login </a>
+            </p>
+
+            <p>
+                <button> <a href="../cadastro.html">Cadastro</a> </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="container_pontuacao">
+        Sua pontuação: <div class="pontuacao" id="exibir"></div>
+    </div>
+
+    <div class="container">
+        <div class="regras">
+            Cada pergunta vale 20 pontos. <br>
+            <div class="container"> Se divirta! </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 1- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+
+                    <div class="musica_e_artista">
+                       <b> Epitáfio - Titãs </b>
+                    </div>
+
+                    <div class="container">
+                        <div class="letra_epitafio">
+                            "Devia ter amado mais <br>
+                            Ter chorado mais <br>
+                            Ter visto o Sol nascer <br>
+                            Devia ter ______ mais <br>
+                            E até errado mais <br>
+                            Ter feito o que eu queria fazer"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado1-3" onclick="alternativa_erradaTres()">chorado</button>
+                    <button id="botao_certo_AM" onclick="alternativa_certa()">arriscado</button>
+                    <button id="botao_errado1-1" onclick="alternativa_erradaUm()">vivido</button>
+                    <button id="botao_errado1-2" onclick="alternativa_erradaDois()">me divertido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 2- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Canção Pro Meu Filho - Djonga </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div class="letra_epitafio">
+                            "Fazendo conta com 400 conto <br>
+                            Dizendo que ia dar pra sustentar <br>
+                            Sua mãe chorando sem entender nada <br>
+                            A noite é longa, e a manhã faz o choro passar <br>
+                            Eu prometi que ia dar tudo certo <br> 
+                            Mas só que ________ durou muito tempo"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_icarus" onclick="alternativa_certa2()">a noite</button>
+                    <button id="botao_errado2-1" onclick="alternativa_errada2Um()">não</button>
+                    <button id="botao_errado2-3" onclick="alternativa_errada2Tres()">ainda</button>
+                    <button id="botao_errado2-2" onclick="alternativa_errada2Dois()">o dia</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 3- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Uma Criança Com Seu Olhar - Charlie Brown Jr. </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div style="font-size: 22px;" class="letra_epitafio">
+                            "Aqui estou na difícil missão de levar a você <br>
+                            Uma mensagem que possa ser <br>
+                            Como uma luz ou um mantra <br>
+                            Nós não somos mais crianças <br>
+                            Um dia acontece, a gente tem que crescer <br>
+                            Temos que encarar a responsa <br>
+                            Eu não deixei de achar _____ nas coisas"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_construcao" onclick="alternativa_certa3()">graça</button>
+                    <button id="botao_errado3-1" onclick="alternativa_errada3Um()">tristeza</button>
+                    <button id="botao_errado3-2" onclick="alternativa_errada3Dois()">cor</button>
+                    <button id="botao_errado3-3" onclick="alternativa_errada3Tres()">beleza</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 4- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Quem Vai Dizer Tchau? - Nando Reis </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div style="font-size: 22px;" class="letra_epitafio">
+                            "A gente não percebe o amor <br>
+                            Que se perde aos poucos <br>
+                            Sem virar carinho <br>
+                            Guardar lá dentro o amor não impede <br>
+                            Que ele empedre mesmo crendo-se ______ <br>
+                            Tornar o amor real é expulsá-lo de você <br>
+                            Pra que ele possa ser de alguém"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado4-1" onclick="alternativa_errada4Um()">pouco</button>
+                    <button id="botao_errado4-2" onclick="alternativa_errada4Dois()">que não existe</button>
+                    <button id="botao_errado4-3" onclick="alternativa_errada4Tres()">que ama</button>
+                    <button id="botao_certo_igor" onclick="alternativa_certa4()">infinito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 5- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Tempo Perdido - Legião Urbana </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div class="letra_epitafio">
+                            "Todos os dias quando acordo <br>
+                            Não tenho mais o tempo que passou <br>
+                            Mas tenho muito tempo <br>
+                            Temos todo tempo do mundo <br>
+                            Todos os dias, antes de dormir <br>
+                            Lembro e _____ como foi o dia"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado5-1" onclick="alternativa_errada5Um()">anoto</button>
+                    <button id="botao_certo_sos" onclick="alternativa_certa5()">esqueço</button>
+                    <button id="botao_errado5-2" onclick="alternativa_errada5Dois()">recordo</button>
+                    <button id="botao_errado5-3" onclick="alternativa_errada5Tres()">sonho</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 6- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Can't Tell Me Nothing - Kanye West </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div style="font-size: 27px; margin-top:50px"  class="letra_epitafio">
+                            "I had a dream I can buy my way to heaven <br>
+                            When I awoke, I spent that on a ______ <br>
+                            I told God I'd be back in a second <br>
+                            Man It's so hard not to act reckless"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado6-1" onclick="alternativa_errada6Um()">ring</button>
+                    <button id="botao_certo_exagerado" onclick="alternativa_certa6()">necklace</button>
+                    <button id="botao_errado6-2" onclick="alternativa_errada6Dois()">star</button>
+                    <button id="botao_errado6-3" onclick="alternativa_errada6Tres()">ticket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 7- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Mágico de Oz - Racionais </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div class="letra_epitafio">
+                            "Comecei a usar pra esquecer dos problema' <br>
+                            Fugi de casa, meu pai chegava bebâdo e me batia muito <br>
+                            Queria sair dessa vida <br>
+                            Meu sonho? Estudar, ter uma casa, uma família <br>
+                            Se eu fosse mágico? Não existia droga, nem fome e nem _____ "                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado7-1" onclick="alternativa_errada7Um()">dinheiro</button>
+                    <button id="botao_certo_currents" onclick="alternativa_certa7()">polícia</button>
+                    <button id="botao_errado7-2" onclick="alternativa_errada7Dois()">violência</button>
+                    <button id="botao_errado7-3" onclick="alternativa_errada7Tres()">raça</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 8- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> We Are Young - Fun. </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div style="font-size: 20.7px;" class="letra_epitafio">
+                            "So if by the time the bar closes <br>
+                            And you feel like falling down <br>
+                            I'll carry you home <br>
+                            Tonight <br>
+                            We are young <br>
+                            So let's set the world on ____ <br>
+                            We can burn brighter <br>
+                            Than the Sun"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_n" onclick="alternativa_certa8()">fire</button>
+                    <button id="botao_errado8-1" onclick="alternativa_errada8Um()">fun</button>
+                    <button id="botao_errado8-2" onclick="alternativa_errada8Dois()">wires</button>
+                    <button id="botao_errado8-3" onclick="alternativa_errada8Tres()">my side</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 9- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> João e Maria - Chico Buarque </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div style="font-size: 23px;" class="letra_epitafio">
+                            "Agora era fatal <br>
+                            Que o faz de conta terminasse assim <br>
+                            Pra lá deste quintal <br>
+                            Era uma noite que não tem mais fim <br> 
+                            Pois você sumiu no mundo sem me avisar <br>
+                            E agora eu era um ____ a perguntar <br>
+                            O que é que a vida vai fazer de mim?"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado9-1" onclick="alternativa_errada9Um()">doido</button>
+                    <button id="botao_errado9-2" onclick="alternativa_errada9Dois()">homem</button>
+                    <button id="botao_errado9-3" onclick="alternativa_errada9Tres()">estranho</button>
+                    <button id="botao_certo_anacronico" onclick="alternativa_certa9()">louco</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 10- Complete a Música </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta_complete">
+                    <div class="musica_e_artista">
+                        <b> Phantom Regret by Jim - The Weeknd </b>
+                     </div>
+ 
+                     <div class="container">
+                        <div style="font-size: 23px;" class="letra_epitafio">
+                            "Are you listening real close? Heaven's not that, it's this <br>
+                            It's the depth of this moment, we don't reach for bliss <br>
+                            God knows life is chaos, but He made one thing true <br>
+                            You gotta unwind your mind, train your soul to align <br>
+                            And dance till you find that divine boogaloo <br>
+                            In other words <br>
+                            You gotta be Heaven to see _____"                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado10-1" onclick="alternativa_errada10Um()">God</button>
+                    <button id="botao_errado10-2" onclick="alternativa_errada10Dois()">peace</button>
+                    <button id="botao_certo_bluesman" onclick="alternativa_certa10()">Heaven</button>
+                    <button id="botao_errado10-3" onclick="alternativa_errada10Tres()">Him</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_pontuacao">
+        Sua pontuação final foi de: <div class="pontuacao" id="exibir2"></div>
+    </div>
+
+    <div class="container">
+        <div class="respostas_e_placar">
+            <p> <b style="font-size: 30px;"> Ver Respostas </b> </p>
+            <div id="exibir_respostas"></div>
+            <div class="container_botao_respostas">
+                <button onclick="mostrar_respostas()">Respostas</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var pontos = 0;
+    var pode_votar = true;
+    var pode_votar2 = true;
+    var pode_votar3 = true;
+    var pode_votar4 = true;
+    var pode_votar5 = true;
+    var pode_votar6 = true;
+    var pode_votar7 = true;
+    var pode_votar8 = true;
+    var pode_votar9 = true;
+    var pode_votar10 = true;
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_erradaUm() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_erradaDois() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_erradaTres() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa() {
+        if (pode_votar == true) {
+            pontos += 20;
+            pode_votar = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_AM");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada2Um() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada2Dois() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada2Tres() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa2() {
+        if (pode_votar2 == true) {
+            pontos += 20;
+            pode_votar2 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_icarus");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada3Um() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada3Dois() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada3Tres() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa3() {
+        if (pode_votar3 == true) {
+            pontos += 20;
+            pode_votar3 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_construcao");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada4Um() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada4Dois() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada4Tres() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa4() {
+        if (pode_votar4 == true) {
+            pontos += 20;
+            pode_votar4 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_igor");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada5Um() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada5Dois() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada5Tres() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa5() {
+        if (pode_votar5 == true) {
+            pontos += 20;
+            pode_votar5 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_sos");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada6Um() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada6Dois() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada6Tres() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa6() {
+        if (pode_votar6 == true) {
+            pontos += 20;
+            pode_votar6 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_exagerado");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada7Um() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada7Dois() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada7Tres() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa7() {
+        if (pode_votar7 == true) {
+            pontos += 20;
+            pode_votar7 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_currents");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada8Um() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada8Dois() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada8Tres() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa8() {
+        if (pode_votar8 == true) {
+            pontos += 20;
+            pode_votar8 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_n");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada9Um() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada9Dois() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada9Tres() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa9() {
+        if (pode_votar9 == true) {
+            pontos += 20;
+            pode_votar9 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_anacronico");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada10Um() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada10Dois() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada10Tres() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa10() {
+        if (pode_votar10 == true) {
+            pontos += 20;
+            pode_votar10 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_bluesman");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+
+    function ver_pontos() {
+        exibir.innerHTML = ``
+        exibir.innerHTML += `${pontos} pontos`
+        exibir2.innerHTML = ``
+        exibir2.innerHTML += `${pontos} pontos`
+    }
+
+    function mostrar_respostas() {
+        if (pode_votar == false && pode_votar2 == false && pode_votar3 == false && pode_votar4 == false && pode_votar5 == false &&
+            pode_votar6 == false && pode_votar7 == false && pode_votar8 == false && pode_votar9 == false && pode_votar10 == false) {
+            exibir_respostas.innerHTML = `
+                <p>
+                1. arriscado <br>
+                2. a noite <br>
+                3. graça <br>
+                4. infinito <br>
+                5. esqueço <br>
+                6. necklace <br>
+                7. dinheiro <br>
+                8. fire <br>
+                9. louco <br>
+                10. Heaven
+                </p>
+                `
+        }
+
+        else {
+            exibir_respostas.innerHTML = `<span> Você ainda não respondeu tudo! </span>`
+        }
+    }
+
+</script>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Albúm Pela Capa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1 class="titulo">
+            <b> <a href="../index.html"> TOP 50 </a> </b>
+        </h1>
+        <div class="itens">
+            <p class="lista">
+                <a href=""> Rankings </a>
+            </p>
+
+            <p class="playlists">
+                <a href=""> Quiz </a>
+            </p>
+
+            <p>
+                <a href="../login.html"> Login </a>
+            </p>
+
+            <p>
+                <button> <a href="../cadastro.html">Cadastro</a> </button>
+            </p>
+        </div>
+    </div>
+
+    <div class="container_pontuacao">
+        Sua pontuação: <div class="pontuacao" id="exibir"></div>
+    </div>
+
+    <div class="container">
+        <div class="regras">
+            Cada pergunta vale 20 pontos. <br>
+            <div class="container"> Se divirta! </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 1- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/am_arctic.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado1-3" onclick="alternativa_erradaTres()">PM</button>
+                    <button id="botao_errado1-1" onclick="alternativa_erradaUm()">505</button>
+                    <button id="botao_certo_AM" onclick="alternativa_certa()">AM</button>
+                    <button id="botao_errado1-2" onclick="alternativa_erradaDois()">Radio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 2- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                   <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/BK-Icarus.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_icarus" onclick="alternativa_certa2()">Icarus</button>
+                    <button id="botao_errado2-2" onclick="alternativa_errada2Dois()">Gigantes</button>
+                    <button id="botao_errado2-1" onclick="alternativa_errada2Um()">Anjos</button>
+                    <button id="botao_errado2-3" onclick="alternativa_errada2Tres()">Vivaz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 3- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/construcao_chico.png" alt="">               
+                 </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado3-1" onclick="alternativa_errada3Um()">Carioca</button>
+                    <button id="botao_errado3-2" onclick="alternativa_errada3Dois()">Almanaque</button>
+                    <button id="botao_errado3-3" onclick="alternativa_errada3Tres()">Caravanas</button>
+                    <button id="botao_certo_construcao" onclick="alternativa_certa3()">Construção</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 4- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/igor_tyler.jpg" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado4-1" onclick="alternativa_errada4Um()">Goblin</button>
+                    <button id="botao_errado4-2" onclick="alternativa_errada4Dois()">Wolf</button>
+                    <button id="botao_certo_igor" onclick="alternativa_certa4()">IGOR</button>
+                    <button id="botao_errado4-3" onclick="alternativa_errada4Tres()">TYLER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 5- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/sos_sza.jpg" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_sos" onclick="alternativa_certa5()">SOS</button>
+                    <button id="botao_errado5-1" onclick="alternativa_errada5Um()">Lost</button>
+                    <button id="botao_errado5-2" onclick="alternativa_errada5Dois()">CTRL</button>
+                    <button id="botao_errado5-3" onclick="alternativa_errada5Tres()">Ocean</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 6- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/Exagerado.jpg" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_exagerado" onclick="alternativa_certa6()">Exagerado</button>
+                    <button id="botao_errado6-1" onclick="alternativa_errada6Um()">Ideologia</button>
+                    <button id="botao_errado6-2" onclick="alternativa_errada6Dois()">Atípico</button>
+                    <button id="botao_errado6-3" onclick="alternativa_errada6Tres()">Boa Vida</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 7- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/currents_tameimpala.png" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado7-1" onclick="alternativa_errada7Um()">B-Side</button>
+                    <button id="botao_errado7-2" onclick="alternativa_errada7Dois()">Lines</button>
+                    <button id="botao_certo_currents" onclick="alternativa_certa7()">Currents</button>
+                    <button id="botao_errado7-3" onclick="alternativa_errada7Tres()">Waves</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 8- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/N_anavitoria.jpg" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_certo_n" onclick="alternativa_certa8()">N</button>
+                    <button id="botao_errado8-1" onclick="alternativa_errada8Um()">A</button>
+                    <button id="botao_errado8-2" onclick="alternativa_errada8Dois()">M</button>
+                    <button id="botao_errado8-3" onclick="alternativa_errada8Tres()">D</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 9- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/pitty_anacronico.png" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado9-1" onclick="alternativa_errada9Um()">Setevidas</button>
+                    <button id="botao_errado9-2" onclick="alternativa_errada9Dois()">Estante</button>
+                    <button id="botao_errado9-3" onclick="alternativa_errada9Tres()">Dèjá Vu</button>
+                    <button id="botao_certo_anacronico" onclick="alternativa_certa9()">Anacrônico</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="primeira_pergunta_album">
+            <div class="faixa_das_perguntas">
+                <span> 10- Qual o Álbum? </span>
+            </div>
+
+            <div class="container">
+                <div class="pergunta">
+                    <img style="height: 250px;" width="270px" src="../assets/albuns_quiz/bacoexubluesman.webp" alt="">               
+                </div>
+            </div>
+
+            <div class="container_alternativas">
+                <div class="botoes_das_perguntas">
+                    <button id="botao_errado10-1" onclick="alternativa_errada10Um()">Esú</button>
+                    <button id="botao_certo_bluesman" onclick="alternativa_certa10()">Bluesman</button>
+                    <button id="botao_errado10-2" onclick="alternativa_errada10Dois()">Estouro</button>
+                    <button id="botao_errado10-3" onclick="alternativa_errada10Tres()">Guitar Songs</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_pontuacao">
+        Sua pontuação final foi de: <div class="pontuacao" id="exibir2"></div>
+    </div>
+
+    <div class="container">
+        <div class="respostas_e_placar">
+            <p> <b style="font-size: 30px;"> Ver Respostas </b> </p>
+            <div id="exibir_respostas"></div>
+            <div class="container_botao_respostas">
+                <button onclick="mostrar_respostas()">Respostas</button>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var pontos = 0;
+    var pode_votar = true;
+    var pode_votar2 = true;
+    var pode_votar3 = true;
+    var pode_votar4 = true;
+    var pode_votar5 = true;
+    var pode_votar6 = true;
+    var pode_votar7 = true;
+    var pode_votar8 = true;
+    var pode_votar9 = true;
+    var pode_votar10 = true;
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_erradaUm() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_erradaDois() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_erradaTres() {
+        if (pode_votar == true) {
+            pontos += 0;
+            pode_votar = false;
+            var element = document.getElementById("botao_errado1-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa() {
+        if (pode_votar == true) {
+            pontos += 20;
+            pode_votar = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_AM");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada2Um() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada2Dois() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada2Tres() {
+        if (pode_votar2 == true) {
+            pontos += 0;
+            pode_votar2 = false;
+            var element = document.getElementById("botao_errado2-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa2() {
+        if (pode_votar2 == true) {
+            pontos += 20;
+            pode_votar2 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_icarus");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada3Um() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada3Dois() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada3Tres() {
+        if (pode_votar3 == true) {
+            pontos += 0;
+            pode_votar3 = false;
+            var element = document.getElementById("botao_errado3-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa3() {
+        if (pode_votar3 == true) {
+            pontos += 20;
+            pode_votar3 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_construcao");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada4Um() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada4Dois() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada4Tres() {
+        if (pode_votar4 == true) {
+            pontos += 0;
+            pode_votar4 = false;
+            var element = document.getElementById("botao_errado4-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa4() {
+        if (pode_votar4 == true) {
+            pontos += 20;
+            pode_votar4 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_igor");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada5Um() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada5Dois() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada5Tres() {
+        if (pode_votar5 == true) {
+            pontos += 0;
+            pode_votar5 = false;
+            var element = document.getElementById("botao_errado5-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa5() {
+        if (pode_votar5 == true) {
+            pontos += 20;
+            pode_votar5 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_sos");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada6Um() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada6Dois() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada6Tres() {
+        if (pode_votar6 == true) {
+            pontos += 0;
+            pode_votar6 = false;
+            var element = document.getElementById("botao_errado6-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa6() {
+        if (pode_votar6 == true) {
+            pontos += 20;
+            pode_votar6 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_exagerado");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada7Um() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada7Dois() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada7Tres() {
+        if (pode_votar7 == true) {
+            pontos += 0;
+            pode_votar7 = false;
+            var element = document.getElementById("botao_errado7-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa7() {
+        if (pode_votar7 == true) {
+            pontos += 20;
+            pode_votar7 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_currents");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada8Um() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada8Dois() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada8Tres() {
+        if (pode_votar8 == true) {
+            pontos += 0;
+            pode_votar8 = false;
+            var element = document.getElementById("botao_errado8-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa8() {
+        if (pode_votar8 == true) {
+            pontos += 20;
+            pode_votar8 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_n");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada9Um() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada9Dois() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada9Tres() {
+        if (pode_votar9 == true) {
+            pontos += 0;
+            pode_votar9 = false;
+            var element = document.getElementById("botao_errado9-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_certa9() {
+        if (pode_votar9 == true) {
+            pontos += 20;
+            pode_votar9 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_anacronico");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+    ///////////////////////////////////////////////////////////////////////////////////
+
+    function alternativa_errada10Um() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-1");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada10Dois() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-2");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+    function alternativa_errada10Tres() {
+        if (pode_votar10 == true) {
+            pontos += 0;
+            pode_votar10 = false;
+            var element = document.getElementById("botao_errado10-3");
+            element.classList.add("alternativas_erradas");
+        }
+    }
+
+
+    function alternativa_certa10() {
+        if (pode_votar10 == true) {
+            pontos += 20;
+            pode_votar10 = false;
+            ver_pontos();
+            var element = document.getElementById("botao_certo_bluesman");
+            element.classList.add("alternativas_certas");
+        }
+    }
+
+
+    function ver_pontos() {
+        exibir.innerHTML = ``
+        exibir.innerHTML += `${pontos} pontos`
+        exibir2.innerHTML = ``
+        exibir2.innerHTML += `${pontos} pontos`
+    }
+
+    function mostrar_respostas() {
+        if (pode_votar == false && pode_votar2 == false && pode_votar3 == false && pode_votar4 == false && pode_votar5 == false &&
+            pode_votar6 == false && pode_votar7 == false && pode_votar8 == false && pode_votar9 == false && pode_votar10 == false) {
+            exibir_respostas.innerHTML = `
+                <p>
+                1. AM <br>
+                2. Icarus <br>
+                3. Construção <br>
+                4. IGOR <br>
+                5. SOS <br>
+                6. Exagerado <br>
+                7. Currents <br>
+                8. N <br>
+                9. Anacrônico <br>
+                10. Bluesman
+                </p>
+                `
+        }
+
+        else {
+            exibir_respostas.innerHTML = `<span> Você ainda não respondeu tudo! </span>`
+        }
+    }
+
+</script>

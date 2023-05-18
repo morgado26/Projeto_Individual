@@ -789,7 +789,7 @@ body {
 .container_pontuacao {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -806,6 +806,12 @@ body {
     height: 500px;
     border-radius: 5px;
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabela{
+    width: 700px;
 }
 
 .linha-vertical_placar{
@@ -882,6 +888,36 @@ body {
     font-size: 24px;
 }
 
+.voltar{
+    margin-top: 50px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.voltar a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    margin-top: 200px;
+    margin-left: 0px;
+    color: white;
+}
+
+.voltar span{
+   margin-top: 100px;
+}
+
+.arrow-left {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #ffffff;
+    border-left: 40px;
+    border-top: 17px;
+    margin-top: 5.5px;
+    float: left;
+    transform: rotate(135deg);
+}
+
 /* ----------------------------------------------------------Conhecer--------------------------------------------------------------------------- */
 
 .bodyCadastro {
@@ -948,4 +984,33 @@ body {
 
 .formbox2 button{
     margin-top: 40px;
+}
+
+/* ----------------------------------------------------------Gráficos--------------------------------------------------------------------------- */
+
+.container_graficos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#myChart{
+    height: 400px;
+    color: aquamarine;
+}
+
+#myChart2{
+    height: 400px;
+}
+
+.cor{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.mensagem_graficos {
+    color: white;
+    font-family: 'Quicksand';
+    font-size: 28px;
+    margin-top: 55px;
 }

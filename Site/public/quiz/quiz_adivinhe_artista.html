@@ -20,10 +20,6 @@
                 <a href=""> Rankings </a>
             </p>
 
-            <p class="playlists">
-                <a href=""> Quiz </a>
-            </p>
-
             <p>
                 <a href="../login.html"> Login </a>
             </p>
@@ -32,6 +28,10 @@
                 <button> <a href="../cadastro.html">Cadastro</a> </button>
             </p>
         </div>
+    </div>
+
+    <div class="voltar">
+        <a href="../index.html"><div class="arrow-left"></div><span> Voltar</span></a>
     </div>
 
     <div class="container_pontuacao">
@@ -708,6 +708,7 @@
     function ver_pontos() {
         exibir.innerHTML = ``
         exibir.innerHTML += `${pontos} pontos`
+            
         exibir2.innerHTML = ``
         exibir2.innerHTML += `${pontos} pontos`
     }

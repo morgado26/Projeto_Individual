@@ -65,6 +65,7 @@
         var nomeVar = nome_input.value;
         var emailVar = email_input.value;
         var senhaVar = senha_input.value;
+        var confirmacao_senha_input = confirmacao_senha_input.value;
 
 
         if (nomeVar == "" || emailVar == "" || senhaVar == "") {
@@ -82,6 +83,9 @@
         }
         else if (senhaVar.length < 6) {
             swal("Ops", "A senha inserida é muito curta. Por favor,insira uma senha com pelo menos 6 caracteres", "warning")
+        }
+        else if (senhaVar != confirmacao_senha_input){
+            swal("Ops", "As senhas não coincidem", "warning")
         }
         else {
             setInterval('oi', 5000)
@@ -119,7 +123,7 @@
                     limparFormulario();
                     finalizarAguardar();
                 } else {
-                    swal("Ops", "Mais de um usuário com o mesmo login e senha!")
+                    swal("Ops", "Mais de um usuário com o mesmo login e senha!", "warning")
                 }
             }).catch(function (resposta) {
                 console.log(`#ERRO: ${resposta}`);

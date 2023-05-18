@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -17,11 +18,11 @@
         </h1>
         <div class="itens">
             <p class="lista">
-                <a href=""> Rankings </a>
+                <a href="javascript:window.scrollTo({left: 0,top: 800, behavior: 'smooth'})"> Rankings </a>
             </p>
 
             <p class="playlists">
-                <a href=""> Quiz </a>
+                <a href="javascript:window.scrollTo({left: 0,top: 2600, behavior: 'smooth'})"> Quiz </a>
             </p>
 
             <p>
@@ -209,39 +210,84 @@
 
     <div class="container_quiz">
         <div class="quiz1">
-            <div style="height: 90px;" class="faixa"><p style="font-size: 27px;">Qual a Música?</p></div>
+            <div style="height: 90px;" class="faixa">
+                <p style="font-size: 27px;">Qual a Música?</p>
+            </div>
             <div style="margin-top: 20px;" class="container_card">
                 <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_qual_musica.jpg" alt="">
             </div> <br>
-            <div class="faixa_jogar"> <p> <a href="quiz/quiz_qual_musica.html"> Jogar </a></p> </div>
+            <div class="faixa_jogar">
+                <p> <a href="quiz/quiz_qual_musica.html"> Jogar </a></p>
+            </div>
         </div>
 
         <div class="quiz2">
-            <div style="height: 90px;" class="faixa"> <p style="font-size: 27px;"> Adivinhe o Albúm Pela Capa </p> </div>
+            <div style="height: 90px;" class="faixa">
+                <p style="font-size: 27px;"> Adivinhe o Albúm Pela Capa </p>
+            </div>
             <div style="margin-top: 20px;" class="container_card">
                 <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_albuns.png" alt="">
             </div> <br>
-            <div class="faixa_jogar"> <p> <a href="quiz/quiz_capa_album.html"> Jogar </a></p> </div>
+            <div class="faixa_jogar">
+                <p> <a href="quiz/quiz_capa_album.html"> Jogar </a></p>
+            </div>
         </div>
     </div>
 
     <div class="container_quiz">
         <div class="quiz3">
-            <div style="height: 90px;" class="faixa"><p style="font-size: 27px;">Complete a Música</p></div>
+            <div style="height: 90px;" class="faixa">
+                <p style="font-size: 27px;">Complete a Música</p>
+            </div>
             <div style="margin-top: 20px;" class="container_card">
                 <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_complete_musica.webp" alt="">
             </div> <br>
-            <div class="faixa_jogar"> <p> <a href="quiz/quiz_complete_musica.html"> Jogar </a></p> </div>
+            <div class="faixa_jogar">
+                <p> <a href="quiz/quiz_complete_musica.html"> Jogar </a></p>
+            </div>
         </div>
 
         <div class="quiz4">
-            <div style="height: 90px;" class="faixa"><p style="font-size: 27px;">Adivinhe o Artista</p></div>
+            <div style="height: 90px;" class="faixa">
+                <p style="font-size: 27px;">Adivinhe o Artista</p>
+            </div>
             <div style="margin-top: 20px;" class="container_card">
                 <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_adivinhe_artista.jpg" alt="">
             </div> <br>
-            <div class="faixa_jogar"> <p> <a href=""> Jogar </a></p> </div>
+            <div class="faixa_jogar">
+                <p> <a href="quiz/quiz_adivinhe_artista.html"> Jogar </a></p>
+            </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="titulo_ranking">OS PREFERIDOS</div>
+    </div>
+
+    <div class="container">
+        <div class="mensagem_graficos">
+            <span>Acompanhe as músicas e álbuns mais votados <br></span>
+            <div class="container">
+                <span> como as favoritas de nossos usuários!</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_graficos">
+
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <div class="chart2">
+            <canvas id="myChart2"></canvas>
+        </div>
+
+    </div>
+
+
+
+
 
     <div class="footer">
         <p>
@@ -261,3 +307,65 @@
 </body>
 
 </html>
+
+<script>
+
+    const labels = [
+        'Musica1',
+        'Musica2',
+        'Musica3',
+        'Musica4',
+        'Musica5'
+    ];
+
+    const data = {
+        labels: labels,
+        datasets: [{
+            data: [30, 29, 28, 25, 22],
+            backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
+            borderColor: 'white',
+        }
+        ]
+    };
+
+    const labels2 = [
+        'Musica1',
+        'Musica2',
+        'Musica3',
+        'Musica4',
+        'Musica5'
+    ];
+
+    const data2 = {
+        labels: labels2,
+        datasets: [{
+            data: [22, 24, 27, 23, 20],
+            backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
+            borderColor: 'white',
+        }]
+    };
+
+    const config = {
+        type: 'pie',
+        data: data
+    };
+
+    const config2 = {
+        type: 'pie',
+        data: data2,
+        options: {}
+    };
+</script>
+
+<script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+
+    const myChart2 = new Chart(
+        document.getElementById('myChart2'),
+        config2
+    );
+
+</script>

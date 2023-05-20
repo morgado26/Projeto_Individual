@@ -1,0 +1,8 @@
+texto da imagem home
+
+<div class="container_imagem">
+        <div class="imagem_home">
+            <p>TOP 50</p>
+            <div class="slogan"> <span>O portal da música que conecta fãs de todo Brasil!</span> </div>
+        </div>
+    </div>

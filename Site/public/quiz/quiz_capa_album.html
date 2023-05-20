@@ -275,17 +275,71 @@
         </div>
     </div>
 
+    <div class="container">
+        <button class="botao_enviar" onclick="enviar()">Enviar Respostas</button>
+    </div>
+    
     <div class="container_pontuacao">
         Sua pontuação final foi de: <div class="pontuacao" id="exibir2"></div>
     </div>
 
+
     <div class="container">
         <div class="respostas_e_placar">
-            <p> <b style="font-size: 30px;"> Ver Respostas </b> </p>
-            <div id="exibir_respostas"></div>
-            <div class="container_botao_respostas">
-                <button onclick="mostrar_respostas()">Respostas</button>
-            </div>
+            <table class="tabela" border="1">
+                <tr>
+                    <thead>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Pontuação
+                        </th>
+                    </thead>
+                </tr>
+                <tr>
+                    <td>
+                        Murilo
+                    </td>
+                    <td>
+                        180 pontos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Lucas
+                    </td>
+
+                    <td>
+                        140 pontos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Marcelo
+                    </td>
+                    <td>
+                        100 pontos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Henrique
+                    </td>
+                    <td>
+                        80 pontos
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gustavo
+                    </td>
+                    <td>
+                        40 pontos
+                    </td>
+                </tr>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -307,6 +361,10 @@
     var pode_votar8 = true;
     var pode_votar9 = true;
     var pode_votar10 = true;
+
+    function enviar(){
+        exibir2.innerHTML += `${pontos} pontos`
+    }
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -708,8 +766,6 @@
     function ver_pontos() {
         exibir.innerHTML = ``
         exibir.innerHTML += `${pontos} pontos`
-        exibir2.innerHTML = ``
-        exibir2.innerHTML += `${pontos} pontos`
     }
 
     function mostrar_respostas() {

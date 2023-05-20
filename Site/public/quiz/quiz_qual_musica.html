@@ -17,7 +17,11 @@
         </h1>
         <div class="itens">
             <p class="lista">
-                <a href=""> Rankings </a>
+                <a href="../index.html"> Rankings </a>
+            </p>
+
+            <p>
+                <a href="../index.html">Quiz</a>
             </p>
 
             <p>
@@ -278,6 +282,10 @@
         </div>
     </div>
 
+    <div class="container">
+        <button class="botao_enviar" onclick="enviar()">Enviar Respostas</button>
+    </div>
+
     <div class="container_pontuacao">
         Sua pontuação final foi de: <div class="pontuacao" id="exibir2"></div>
     </div>
@@ -359,6 +367,10 @@
     var pode_votar8 = true;
     var pode_votar9 = true;
     var pode_votar10 = true;
+
+    function enviar(){
+        exibir2.innerHTML += `${pontos} pontos`
+    }
 
     ///////////////////////////////////////////////////////////////////////////////////
 
@@ -760,8 +772,6 @@
     function ver_pontos() {
         exibir.innerHTML = ``
         exibir.innerHTML += `${pontos} pontos`
-        exibir2.innerHTML = ``
-        exibir2.innerHTML += `${pontos} pontos`
     }
 
     function mostrar_respostas() {

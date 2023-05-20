@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
-<body>
+<body onload="imagens_home()">
 
     <div class="navbar">
         <h1 class="titulo">
@@ -18,97 +18,105 @@
         </h1>
         <div class="itens">
             <p class="lista">
-                <a href="javascript:window.scrollTo({left: 0,top: 800, behavior: 'smooth'})"> Rankings </a>
+                <a href="javascript:window.scrollTo({left: 0,top: 1400, behavior: 'smooth'})"> Rankings </a>
             </p>
 
             <p class="playlists">
-                <a href="javascript:window.scrollTo({left: 0,top: 2600, behavior: 'smooth'})"> Quiz </a>
+                <a href="javascript:window.scrollTo({left: 0,top: 3250, behavior: 'smooth'})"> Quiz </a>
             </p>
 
             <p>
-                <a href="login.html"> Login </a>
+                <a href="">Gráficos</a>
             </p>
 
             <p>
-                <button> <a href="cadastro.html">Cadastro</a> </button>
+                <a href="">Notícias</a>
             </p>
         </div>
     </div>
 
-    <div class="container_imagem">
-        <div class="imagem_home">
-            <p>TOP 50</p>
-            <div class="slogan"> <span>O portal da música que conecta fãs de todo Brasil!</span> </div>
-        </div>
+    <div class="container">
+        <span class="bem_vindo">SEJA BEM VINDO AO TOP50</span>
+    </div>
+    <div class="container"> 
+        <span class="mensagem_boas_vindas">Seu melhor portal especializado em música!</span>
+    </div>
+
+    <div class="container">
+        <div id="imagem_home" class="imagem_home"></div>
+    </div>
+
+    <div class="container">
+        <span style="margin-top: 75px;" class="mensagem_boas_vindas">Aproveite tudo que nosso site tem a ofercer!</span>
     </div>
 
     <div class="container">
         <div class="titulo_ranking">RANKINGS TOP 50</div>
     </div>
 
-    <div class="container">
-        <div class="quadrado">
-            <div class="div_cabecalho">
-                <div class="barra1"></div>
-                <p> Top 50 </p>
-                <div class="barra2"></div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/born_to_die.jpg" alt="">
-                <span>1</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        Summertime Sadness (2012) -<br>
-                    </b>
-                    Lana Del Rey
+        <div class="container">
+            <div class="quadrado">
+                <div class="div_cabecalho">
+                    <div class="barra1"></div>
+                    <p> Top 50 </p>
+                    <div class="barra2"></div>
                 </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/mr.morale.jpg" alt="">
-                <span>2</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        United In Grief (2022) -<br>
-                    </b>
-                    Kendrick Lamar
+                <div class="coluna">
+                    <img style="height: 130px;" width="130px" src="assets/Imagens/born_to_die.jpg" alt="">
+                    <span>1</span>
+                    <div class="linha-vertical2"></div>
+                    <div class="dados_musicas">
+                        <b class="nome_musica">
+                            Summertime Sadness (2012) -<br>
+                        </b>
+                        Lana Del Rey
+                    </div>
                 </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/N_anavitoria.jpg" alt="">
-                <span>3</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        As coisas tão mais lindas (2019) -<br>
-                    </b>
-                    ANAVITÓRIA
+                <div class="coluna">
+                    <img style="height: 130px;" width="130px" src="assets/Imagens/mr.morale.jpg" alt="">
+                    <span>2</span>
+                    <div class="linha-vertical2"></div>
+                    <div class="dados_musicas">
+                        <b class="nome_musica">
+                            United In Grief (2022) -<br>
+                        </b>
+                        Kendrick Lamar
+                    </div>
                 </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/graduation.jpg" alt="">
-                <span>4</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        Flashing Lights (2007) -<br>
-                    </b>
-                    Kanye West
+                <div class="coluna">
+                    <img style="height: 130px;" width="130px" src="assets/Imagens/N_anavitoria.jpg" alt="">
+                    <span>3</span>
+                    <div class="linha-vertical2"></div>
+                    <div class="dados_musicas">
+                        <b class="nome_musica">
+                            As coisas tão mais lindas (2019) -<br>
+                        </b>
+                        ANAVITÓRIA
+                    </div>
                 </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/amarElo.jpg" alt="">
-                <span>5</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        A Ordem Natural das Coisas (2019) -<br>
-                    </b>
-                    Emicida
+                <div class="coluna">
+                    <img style="height: 130px;" width="130px" src="assets/Imagens/graduation.jpg" alt="">
+                    <span>4</span>
+                    <div class="linha-vertical2"></div>
+                    <div class="dados_musicas">
+                        <b class="nome_musica">
+                            Flashing Lights (2007) -<br>
+                        </b>
+                        Kanye West
+                    </div>
                 </div>
-            </div>
-            <div class="ver_tudo">
+                <div class="coluna">
+                    <img style="height: 130px;" width="130px" src="assets/Imagens/amarElo.jpg" alt="">
+                    <span>5</span>
+                    <div class="linha-vertical2"></div>
+                    <div class="dados_musicas">
+                        <b class="nome_musica">
+                            A Ordem Natural das Coisas (2019) -<br>
+                        </b>
+                        Emicida
+                    </div>
+                </div>
+                <div class="ver_tudo">
                 <p style="font-size: 32px; margin-top: 32px;"> <a href=""> Ver Tudo </a> </p>
             </div>
         </div>
@@ -285,10 +293,6 @@
 
     </div>
 
-
-
-
-
     <div class="footer">
         <p>
             <b>
@@ -307,6 +311,19 @@
 </body>
 
 </html>
+
+<script>
+    var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
+        "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home3.jpg>",
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>"]
+
+    function imagens_home() {
+        var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
+        imagem_home.innerHTML += `${lista_imagens[numero_aleatorio]}`
+    }
+</script>
 
 <script>
 

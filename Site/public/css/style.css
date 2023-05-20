@@ -54,7 +54,7 @@ body {
     flex-direction: row;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 50px;
+    margin-right: 30px;
     font-weight: 600;
     font-size: large;
 
@@ -63,7 +63,7 @@ body {
 .itens p {
     display: flex;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .itens button {
@@ -85,11 +85,25 @@ body {
 
 .imagem_home {
     width: 94%;
-    /*background-repeat: no-repeat;
-    background-size: cover;*/
-    height: 540px;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    height: 620px;
     margin-top: 70px;
-    background-image: url(../assets/imagens_site/imagem_home.jpg);
+    /* background-image: url(../assets/imagens_site/) */
+}
+
+.bem_vindo {
+    font-family: Vina Sans;
+    color: white;
+    margin-top: 50px;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.mensagem_boas_vindas{
+    font-family: Arvo;
+    color: white;
+    font-size: 30px;
 }
 
 .imagem_home p {
@@ -789,7 +803,7 @@ body {
 .container_pontuacao {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 0px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -811,7 +825,32 @@ body {
 }
 
 .tabela{
+    height: 90%;
     width: 700px;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+.botao_enviar{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    height: 120px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #fff1f1;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.botao_enviar:hover{
+    background-color: #c72f2f;
+    transition: all 0.2s ease-out;
 }
 
 .linha-vertical_placar{
@@ -1013,4 +1052,53 @@ body {
     font-family: 'Quicksand';
     font-size: 28px;
     margin-top: 55px;
+}
+
+/* ----------------------------------------------------------Rankings--------------------------------------------------------------------------- */
+.container_botoes{
+    display: flex;
+    justify-content: space-around;
+
+}
+.opcoes_rankings button{
+    margin: 50px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 210px;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #fff1f1;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.botoes_ranking:hover{
+    background-color: #c72f2f;
+    transition: all 0.2s ease-out;
+}
+
+.quadrado_rankings {
+    display: flex;
+    margin-top: 50px;
+    height: 1930px;
+    width: 960px;
+    background-color: #fff1f1;
+    box-shadow: rgba(0, 0, 0, 0.70) 0px 3px 8px;
+    flex-direction: column;
+}
+
+.quadrado_rankings p {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 25px;
+    color: #DE0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: 68px;
+    margin-right: 50px;
 }

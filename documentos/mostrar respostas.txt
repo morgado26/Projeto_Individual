@@ -1,0 +1,11 @@
+mostrar respostas	 
+
+<div class="container">
+        <div class="respostas_e_placar">
+            <p> <b style="font-size: 30px;"> Ver Respostas </b> </p>
+            <div id="exibir_respostas"></div>
+            <div class="container_botao_respostas">
+                <button onclick="mostrar_respostas()">Respostas</button>
+            </div>
+        </div>
+    </div>

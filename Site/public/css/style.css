@@ -710,6 +710,7 @@ body {
     justify-content: center;
     flex-direction: column;
     color: white;
+    margin-top: 200px;
 }
 
 .footer b {
@@ -1036,15 +1037,12 @@ body {
 
 #myChart{
     height: 400px;
-    color: aquamarine;
+    width: 750px;
 }
 
 #myChart2{
     height: 400px;
-}
-
-.cor{
-    background-color: rgba(255, 255, 255, 0);
+    width: 750px;
 }
 
 .mensagem_graficos {
@@ -1101,4 +1099,43 @@ body {
     font-weight: 600;
     margin-left: 68px;
     margin-right: 50px;
+}
+
+/* ----------------------------------------------------------Notícias--------------------------------------------------------------------------- */
+
+.noticias {
+    margin-left: 75px;
+    margin-top: 60px;
+    background-color: #262626;
+    width: 60%;
+    height: 200px;
+}
+
+.noticias span {
+    font-family: Quicksand;
+    color: white;
+    font-size: 28px;
+    margin-left: 18px;
+    margin-top: 20px;
+}
+
+.noticias img {
+    float: left;
+}
+
+.noticias a{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo_noticia {
+    display: flex;
+    align-items: center;
+}
+
+.noticias .creditos {
+    font-family: Quicksand;
+    color: white;
+    margin-top: 28px;
+    margin-left: 10px;
 }

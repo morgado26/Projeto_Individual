@@ -8,6 +8,12 @@
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
+        <script src="../js/funcoes.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+        <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 </head>
 
 <body onload="imagens_home()">
@@ -38,7 +44,7 @@
     <div class="container">
         <span class="bem_vindo">SEJA BEM VINDO AO TOP50</span>
     </div>
-    <div class="container"> 
+    <div class="container">
         <span class="mensagem_boas_vindas">Seu melhor portal especializado em música!</span>
     </div>
 
@@ -54,70 +60,75 @@
         <div class="titulo_ranking">RANKINGS TOP 50</div>
     </div>
 
-        <div class="container">
-            <div class="quadrado">
-                <div class="div_cabecalho">
-                    <div class="barra1"></div>
-                    <p> Top 50 </p>
-                    <div class="barra2"></div>
+    <!-- <div class="texto-user">
+        <span>Bem-vindo</span>
+        <span id="b_usuario"></span>
+    </div> -->
+
+    <div class="container">
+        <div class="quadrado">
+            <div class="div_cabecalho">
+                <div class="barra1"></div>
+                <p> Top 50 </p>
+                <div class="barra2"></div>
+            </div>
+            <div class="coluna">
+                <img style="height: 130px;" width="130px" src="assets/Imagens/born_to_die.jpg" alt="">
+                <span>1</span>
+                <div class="linha-vertical2"></div>
+                <div class="dados_musicas">
+                    <b class="nome_musica">
+                        Summertime Sadness (2012) -<br>
+                    </b>
+                    Lana Del Rey
                 </div>
-                <div class="coluna">
-                    <img style="height: 130px;" width="130px" src="assets/Imagens/born_to_die.jpg" alt="">
-                    <span>1</span>
-                    <div class="linha-vertical2"></div>
-                    <div class="dados_musicas">
-                        <b class="nome_musica">
-                            Summertime Sadness (2012) -<br>
-                        </b>
-                        Lana Del Rey
-                    </div>
+            </div>
+            <div class="coluna">
+                <img style="height: 130px;" width="130px" src="assets/Imagens/mr.morale.jpg" alt="">
+                <span>2</span>
+                <div class="linha-vertical2"></div>
+                <div class="dados_musicas">
+                    <b class="nome_musica">
+                        United In Grief (2022) -<br>
+                    </b>
+                    Kendrick Lamar
                 </div>
-                <div class="coluna">
-                    <img style="height: 130px;" width="130px" src="assets/Imagens/mr.morale.jpg" alt="">
-                    <span>2</span>
-                    <div class="linha-vertical2"></div>
-                    <div class="dados_musicas">
-                        <b class="nome_musica">
-                            United In Grief (2022) -<br>
-                        </b>
-                        Kendrick Lamar
-                    </div>
+            </div>
+            <div class="coluna">
+                <img style="height: 130px;" width="130px" src="assets/Imagens/N_anavitoria.jpg" alt="">
+                <span>3</span>
+                <div class="linha-vertical2"></div>
+                <div class="dados_musicas">
+                    <b class="nome_musica">
+                        As coisas tão mais lindas (2019) -<br>
+                    </b>
+                    ANAVITÓRIA
                 </div>
-                <div class="coluna">
-                    <img style="height: 130px;" width="130px" src="assets/Imagens/N_anavitoria.jpg" alt="">
-                    <span>3</span>
-                    <div class="linha-vertical2"></div>
-                    <div class="dados_musicas">
-                        <b class="nome_musica">
-                            As coisas tão mais lindas (2019) -<br>
-                        </b>
-                        ANAVITÓRIA
-                    </div>
+            </div>
+            <div class="coluna">
+                <img style="height: 130px;" width="130px" src="assets/Imagens/graduation.jpg" alt="">
+                <span>4</span>
+                <div class="linha-vertical2"></div>
+                <div class="dados_musicas">
+                    <b class="nome_musica">
+                        Flashing Lights (2007) -<br>
+                    </b>
+                    Kanye West
                 </div>
-                <div class="coluna">
-                    <img style="height: 130px;" width="130px" src="assets/Imagens/graduation.jpg" alt="">
-                    <span>4</span>
-                    <div class="linha-vertical2"></div>
-                    <div class="dados_musicas">
-                        <b class="nome_musica">
-                            Flashing Lights (2007) -<br>
-                        </b>
-                        Kanye West
-                    </div>
+            </div>
+            <div class="coluna">
+                <img style="height: 130px;" width="130px" src="assets/Imagens/amarElo.jpg" alt="">
+                <span>5</span>
+                <div class="linha-vertical2"></div>
+                <div class="dados_musicas">
+                    <b class="nome_musica">
+                        A Ordem Natural das Coisas (2019) -<br>
+                    </b>
+                    Emicida
                 </div>
-                <div class="coluna">
-                    <img style="height: 130px;" width="130px" src="assets/Imagens/amarElo.jpg" alt="">
-                    <span>5</span>
-                    <div class="linha-vertical2"></div>
-                    <div class="dados_musicas">
-                        <b class="nome_musica">
-                            A Ordem Natural das Coisas (2019) -<br>
-                        </b>
-                        Emicida
-                    </div>
-                </div>
-                <div class="ver_tudo">
-                <p style="font-size: 32px; margin-top: 32px;"> <a href=""> Ver Tudo </a> </p>
+            </div>
+            <div class="ver_tudo">
+                <p style="font-size: 32px; margin-top: 32px;"> <a href="rankings/top_50.html"> Ver Tudo </a> </p>
             </div>
         </div>
     </div>
@@ -282,7 +293,6 @@
     </div>
 
     <div class="container_graficos">
-
         <div class="chart">
             <canvas id="myChart"></canvas>
         </div>
@@ -290,7 +300,22 @@
         <div class="chart2">
             <canvas id="myChart2"></canvas>
         </div>
+    </div>
 
+    <div class="container">
+        <div class="titulo_ranking">NOTICIAS</div>
+    </div>
+
+    <div class="noticias">
+        <a href=""> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia1.webp"> </a>
+        <div class="titulo_noticia"> 
+            <span>
+               <a href=""> The Town: Foo Fighters e Bruno Mars esgotam ingressos; restam dias de Maroon 5 e Post Malone </a>
+            </span>
+        </div>
+        <div class="creditos">
+            Por Léo Lopes
+        </div>
     </div>
 
     <div class="footer">
@@ -325,7 +350,7 @@
     }
 </script>
 
-<script>
+ <script>
 
     const labels = [
         'Musica1',
@@ -384,5 +409,167 @@
         document.getElementById('myChart2'),
         config2
     );
+
+</script> 
+
+<script>
+
+var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
+        "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home3.jpg>",
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>"]
+
+    function imagens_home() {
+        var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
+        imagem_home.innerHTML += `${lista_imagens[numero_aleatorio]}`
+    }
+
+    b_usuario.innerHTML = sessionStorage.NOME_USUARIO
+
+
+
+    let proximaAtualizacao;
+
+    window.onload = obterDadosGrafico(1);
+
+
+    function obterDadosGrafico(idAquario) {
+
+        if (proximaAtualizacao != undefined) {
+            clearTimeout(proximaAtualizacao);
+        }
+
+
+        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+            if (response.ok) {
+                response.json().then(function (resposta) {
+                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                    plotarGrafico(resposta, idAquario);
+
+                });
+            } else {
+                console.error('Nenhum dado encontrado ou erro na API');
+            }
+        })
+            .catch(function (error) {
+                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+            });
+    }
+
+    // Esta função plotarGrafico usa os dados capturados na função anterior para criar o gráfico
+    // Configura o gráfico (cores, tipo, etc), materializa-o na página e, 
+    // A função plotarGrafico também invoca a função atualizarGrafico
+    function plotarGrafico(resposta, idAquario) {
+        console.log('iniciando plotagem do gráfico...');
+
+        var dados = {
+            labels: [],
+            datasets: [
+                {
+                    label: '',
+
+                    data: []
+                },
+                {
+                    yAxisID: 'y-totalpersonagens',
+                    label: 'Musica Favorita',
+                    backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
+                    fill: true,
+                    data: []
+                }
+            ]
+        };
+
+        for (i = 0; i < resposta.length; i++) {
+            var registro = resposta[i];
+            dados.labels.push(registro.musica);
+            dados.datasets[0].data.push(registro.musica);
+            dados.datasets[1].data.push(registro.voto);
+            console.log(registro.voto)
+
+
+        }
+
+        console.log(JSON.stringify(dados));
+
+        var ctx = myChart.getContext('2d');
+        window.myChart = Chart.Bar(ctx, {
+            data: dados,
+            options: {
+                responsive: true,
+                animation: { duration: 900 },
+                hoverMode: 'index',
+                stacked: false,
+                title: {
+                    display: true,
+                    text: 'Os Personagens mais Escolhidos'
+                },
+
+                scales: {
+                    yAxes: [{
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        id: 'y-totalpersonagens',
+                        ticks: {
+                            beginAtZero: true,
+                            max: 50,
+                            min: 0
+                        }
+                    }, {
+                        display: false,
+                    }],
+                }
+            }
+        });
+
+
+
+        // Esta função atualizarGrafico atualiza o gráfico que foi renderizado na página,
+        // buscando a última medida inserida em tabela contendo as capturas, 
+
+        //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
+        //     Para ajustar o "select", ajuste o comando sql em src/models
+        function atualizarGrafico(idAquario, dados) {
+
+            fetch(`/medidas/tempo-real/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+                if (response.ok) {
+                    response.json().then(function (novoRegistro) {
+
+                        console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
+                        console.log(dados);
+
+                        for (i = 0; i < novoRegistro.length; i++) {
+                            var registro = novoRegistro[i];
+                            // tirando e colocando valores no gráfico
+                            dados.labels.shift(); // apagar o primeiro
+                            dados.labels.push(registro.musica);// incluir um novo momento
+
+                            dados.datasets[0].data.shift();  // apagar o primeiro de umidade
+                            dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
+
+                            dados.datasets[1].data.shift();
+                            dados.datasets[1].data.push(registro.voto);
+                        }
+
+                        window.myChart.update();
+
+                        // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
+                        proximaAtualizacao = setTimeout(() => atualizarGrafico(idAquario, dados), 2000);
+                    });
+                } else {
+                    console.error('Nenhum dado encontrado ou erro na API');
+                    // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
+                    proximaAtualizacao = setTimeout(() => atualizarGrafico(idAquario, dados), 200000);
+                }
+            })
+                .catch(function (error) {
+                    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+                });
+
+        }
+
+    }
 
 </script>

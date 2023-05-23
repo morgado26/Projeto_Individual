@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------INDEX--------------------------------------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Quicksand&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Merriweather&family=Quicksand&family=Vina+Sans&display=swap');
 
 body {
     margin: 0;
@@ -710,7 +710,7 @@ body {
     justify-content: center;
     flex-direction: column;
     color: white;
-    margin-top: 200px;
+    margin-top: 70px;
 }
 
 .footer b {
@@ -1104,9 +1104,9 @@ body {
 /* ----------------------------------------------------------Notícias--------------------------------------------------------------------------- */
 
 .noticias {
-    margin-left: 75px;
-    margin-top: 60px;
-    background-color: #262626;
+    margin-left: 95px;
+    margin-top: 40px;
+    background-color: #383838;
     width: 60%;
     height: 200px;
 }
@@ -1136,6 +1136,228 @@ body {
 .noticias .creditos {
     font-family: Quicksand;
     color: white;
-    margin-top: 28px;
-    margin-left: 10px;
+    margin-top: 38px;
+    margin-left: 310px;
+}
+
+.titulo_noticia a:hover{
+    color: #e41515;
+    transition: all 0.2s ease-out;
+}
+
+.card_noticias {
+    background-color: #fff1f1;
+    margin-top: 50px;
+    width: 1000px;
+    height: 5180px;
+    border-radius: 3px;
+}
+
+.card_noticias h1{
+    margin-top: 35px;
+    font-family: 'Merriweather';
+    font-size: 65px;
+    margin-left: 15px;
+}
+
+.card_noticias h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px
+}
+
+.card_noticias h4{
+    margin-left: 125px;
+    font-family: quicksand;
+}
+
+.texto_noticia {
+    background-color: rgba(215, 215, 215, 0);
+    margin-top: 50px;
+    width: 90%;
+    height: 2000px;
+}
+
+.texto_noticia span{
+    font-family: Quicksand;
+    font-size: 25px;
+}
+
+.texto_noticia h3{
+    font-family: 'Merriweather';
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.texto_noticia img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.card_noticias_guitarra {
+    background-color: #fff1f1;
+    margin-top: 50px;
+    width: 1000px;
+    height: 3020px;
+    border-radius: 3px;
+}
+
+.card_noticias_guitarra h1{
+    margin-top: 35px;
+    font-family: 'Merriweather';
+    font-size: 65px;
+    margin-left: 15px;
+}
+
+.card_noticias_guitarra h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px
+}
+
+.card_noticias_guitarra h4{
+    margin-left: 125px;
+    font-family: quicksand;
+}
+
+.card_noticias_thetown{
+    background-color: #fff1f1;
+    margin-top: 50px;
+    width: 1000px;
+    height: 4100px;
+    border-radius: 3px;
+}
+
+.card_noticias_thetown h4{
+    margin-left: 125px;
+    font-family: quicksand;
+}
+
+.card_noticias_thetown h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px
+}
+
+.card_noticias_thetown h1{
+    margin-top: 35px;
+    font-family: 'Merriweather';
+    font-size: 65px;
+    margin-left: 15px;
+}
+
+.card_noticias_alcione{
+    background-color: #fff1f1;
+    margin-top: 50px;
+    width: 1000px;
+    height: 2770px;
+    border-radius: 3px;
+}
+
+.card_noticias_alcione h4{
+    margin-left: 125px;
+    font-family: quicksand;
+}
+
+.card_noticias_alcione h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px
+}
+
+.card_noticias_alcione h1{
+    margin-top: 35px;
+    font-family: 'Merriweather';
+    font-size: 65px;
+    margin-left: 15px;
+}
+
+.texto_noticia_alcione {
+    background-color: rgba(215, 215, 215, 0);
+    margin-top: 50px;
+    width: 90%;
+    height: 1900px;
+}
+
+.texto_noticia_alcione span{
+    font-family: Quicksand;
+    font-size: 25px;
+}
+
+.texto_noticia_alcione h3{
+    font-family: 'Merriweather';
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.texto_noticia_alcione img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.card_noticias_matue{
+    background-color: #fff1f1;
+    margin-top: 50px;
+    width: 1000px;
+    height: 2150px;
+    border-radius: 3px;
+}
+
+.card_noticias_matue h4{
+    margin-left: 125px;
+    font-family: quicksand;
+}
+
+.card_noticias_matue h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(104, 104, 104);
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px
+}
+
+.card_noticias_matue h1{
+    margin-top: 35px;
+    font-family: 'Merriweather';
+    font-size: 65px;
+    margin-left: 15px;
+}
+
+.texto_noticia_matue {
+    background-color: rgba(215, 215, 215, 0);
+    margin-top: 50px;
+    width: 90%;
+    height: 700px;
+}
+
+.texto_noticia_matue span{
+    font-family: Quicksand;
+    font-size: 25px;
+}
+
+.texto_noticia_matue h3{
+    font-family: 'Merriweather';
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.texto_noticia_matue img {
+    float: left;
+    margin-left: 20px;
+    margin-right: 15px;
 }

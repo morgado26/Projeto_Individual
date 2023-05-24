@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/imagens_site/icon.png" type="image/x-icon">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
-        <script src="../js/funcoes.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-        <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
-        <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
+    <script src="../js/funcoes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
+    <script src="http://www.chartjs.org/samples/latest/utils.js"></script> --> 
 </head>
 
 <body onload="imagens_home()">
@@ -174,7 +175,7 @@
                 </div>
             </div>
             <div class="ver_tudo">
-                <p> <a href=""> Ver Tudo </a> </p>
+                <p> <a href="rankings/nacional.html"> Ver Tudo </a> </p>
             </div>
         </div>
 
@@ -355,10 +356,10 @@
     </div>
 
     <div class="noticias">
-        <a href=""> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia5.webp"> </a>
+        <a href="noticias/matue.html"> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia5.webp"> </a>
         <div class="titulo_noticia"> 
             <span style="margin-top: 30px;">
-               <a href=""> Nacional: Matuê tem melhor estreia do rap nacional no Spotify </a>
+               <a href="noticias/matue.html"> Nacional: Matuê tem melhor estreia do rap nacional no Spotify </a>
             </span>
         </div>
         <div style="margin-top: 65px;" class="creditos">
@@ -375,10 +376,9 @@
         </p>
         <p>
             <b>
-                oi
+                "aconteça o que aconteça, nada como um dia após outro dia"
             </b>
         </p>
-
     </div>
 
 </body>
@@ -390,7 +390,9 @@
         "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
         "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home3.jpg>",
         "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>"]
+        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>"
+        // "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home6.jpg>"
+        ]
 
     function imagens_home() {
         var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);

@@ -285,6 +285,11 @@ body {
     margin-top: 0;
 }
 
+.ver_tudo:hover{
+    background-color: #ff2b2b;
+    transition: 0.4s;
+}
+
 .ver_tudo p {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -463,6 +468,11 @@ body {
     background-color: rgb(0, 0, 0);
     height: 72px;
     width: 100%;
+}
+
+.faixa_jogar:hover{
+    background-color: #ff2b2b;
+    transition: 0.2s;
 }
 
 .faixa_jogar a {
@@ -1037,12 +1047,12 @@ body {
 
 #myChart{
     height: 400px;
-    width: 750px;
+    width: 450px;
 }
 
 #myChart2{
     height: 400px;
-    width: 750px;
+    width: 450px;
 }
 
 .mensagem_graficos {
@@ -1099,6 +1109,26 @@ body {
     font-weight: 600;
     margin-left: 68px;
     margin-right: 50px;
+}
+
+.voltar_ao_topo{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    height: 100px;
+    width: 210px;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #fff1f1;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+.voltar_ao_topo:hover{
+    background-color: #c72f2f;
+    transition: all 0.2s ease-out;
 }
 
 /* ----------------------------------------------------------Notícias--------------------------------------------------------------------------- */

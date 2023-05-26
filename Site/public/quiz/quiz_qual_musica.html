@@ -20,18 +20,19 @@
             <p class="lista">
                 <a href="../index.html"> Rankings </a>
             </p>
-
+            
             <p>
                 <a href="../index.html">Quiz</a>
             </p>
 
             <p>
-                <a href="../login.html"> Login </a>
+                <a href="../index.html">Gráficos</a>
             </p>
 
             <p>
-                <button> <a href="../cadastro.html">Cadastro</a> </button>
+                <a href="../index.html">Notícias</a>
             </p>
+
         </div>
     </div>
 
@@ -292,6 +293,11 @@
     </div>
 
     <div class="container">
+        <div class="respostas">
+            <p> <b style="font-size: 30px;"> Ver Respostas </b> </p>
+            <div id="exibir_respostas"></div>
+            <button onclick="mostrar_respostas()">Respostas</button>
+        </div>
         <div class="respostas_e_placar">
             <table class="tabela" border="1">
                 <tr>
@@ -382,7 +388,7 @@
     var pode_votar10 = true;
 
     function enviar(){
-        exibir2.innerHTML += `${pontos} pontos`
+        exibir2.innerHTML = `${pontos} pontos`
     }
 
     ///////////////////////////////////////////////////////////////////////////////////

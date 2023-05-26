@@ -14,7 +14,7 @@
     <script src="../js/funcoes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
-    <script src="http://www.chartjs.org/samples/latest/utils.js"></script> --> 
+    <script src="http://www.chartjs.org/samples/latest/utils.js"></script> -->
 </head>
 
 <body onload="imagens_home()">
@@ -33,11 +33,11 @@
             </p>
 
             <p>
-                <a href="javascript:window.scrollTo({left: 0,top: 4570, behavior: 'smooth'})">Gráficos</a>
+                <a href="javascript:window.scrollTo({left: 0,top: 5450, behavior: 'smooth'})">Gráficos</a>
             </p>
 
             <p>
-                <a href="javascript:window.scrollTo({left: 0,top: 5420, behavior: 'smooth'})">Notícias</a>
+                <a href="javascript:window.scrollTo({left: 0,top: 6420, behavior: 'smooth'})">Notícias</a>
             </p>
         </div>
     </div>
@@ -281,6 +281,41 @@
     </div>
 
     <div class="container">
+        <div class="titulo_ranking">ENRIQUECER</div>
+    </div>
+
+    <div class="container">
+        <span class="texto_enriquecer">Conheça músicas novas baseadas em seus gêneros favoritos</span>
+    </div>
+
+    <div class="container">
+        <div class="card_enriquecer">
+            <div class="container">
+                <span class="descricao_enriquecer">Escolha um gênero, e te mostraremos três músicas para ampliar seu
+                    gosto musical</span>
+            </div>
+
+            <div class="container">
+                <select id="opcoes_generos">
+                    <option>Escolha um Gênero</option>
+                    <option>Rock</option>
+                    <option>Pop</option>
+                    <option>Indie</option>
+                    <option>R&B</option>
+                    <option>MPB</option>
+                    <option>Rap</option>
+                </select>
+            </div>
+            <div class="container">
+                <div id="exibir"></div>
+            </div>
+            <div class="container">
+                <button onclick="ver_musicas()">Ver Músicas</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="titulo_ranking">OS PREFERIDOS</div>
     </div>
 
@@ -308,62 +343,70 @@
     </div>
 
     <div style="margin-top: 80px;" class="noticias">
-        <a href="noticias/thetown.html"> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia1.webp"> </a>
-        <div class="titulo_noticia"> 
+        <a href="noticias/thetown.html"> <img style="height: 200px; width: 285px;"
+                src="assets/imagens_site/noticia1.webp"> </a>
+        <div class="titulo_noticia">
             <span>
-               <a href="noticias/thetown.html"> The Town: Foo Fighters e Bruno Mars esgotam ingressos; restam dias de Maroon 5 e Post Malone </a>
+                <a href="noticias/thetown.html"> The Town: Foo Fighters e Bruno Mars esgotam ingressos; restam dias de
+                    Maroon 5 e Post Malone </a>
             </span>
         </div>
         <div class="creditos">
-           <p> Por Léo Lopes </p>
+            <p> Por Léo Lopes </p>
         </div>
     </div>
 
     <div class="noticias">
-        <a href="noticias/nirvana.html"> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia2.jpg"> </a>
-        <div class="titulo_noticia"> 
+        <a href="noticias/nirvana.html"> <img style="height: 200px; width: 285px;"
+                src="assets/imagens_site/noticia2.jpg"> </a>
+        <div class="titulo_noticia">
             <span style="margin-top: 30px;">
-               <a href="noticias/nirvana.html"> Nirvana: Guitarra quebrada por Kurt Cobain é vendida por cerca de R$ 3 milhões </a>
+                <a href="noticias/nirvana.html"> Nirvana: Guitarra quebrada por Kurt Cobain é vendida por cerca de R$ 3
+                    milhões </a>
             </span>
         </div>
         <div style="margin-top: 65px;" class="creditos">
-           <p> Por Lianne Kolirin </p>
+            <p> Por Lianne Kolirin </p>
         </div>
     </div>
 
     <div class="noticias">
-        <a href="noticias/emicida.html"> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia3.jpg"> </a>
-        <div class="titulo_noticia"> 
+        <a href="noticias/emicida.html"> <img style="height: 200px; width: 285px;"
+                src="assets/imagens_site/noticia3.jpg"> </a>
+        <div class="titulo_noticia">
             <span style="margin-top: 40px;">
-               <a href="noticias/emicida.html"> Rap: Do pior ao melhor álbum do Emicida </a>
+                <a href="noticias/emicida.html"> Rap: Do pior ao melhor álbum do Emicida </a>
             </span>
         </div>
         <div style="margin-top: 90px;" class="creditos">
-           <p> Por Murilo Morgado </p>
+            <p> Por Murilo Morgado </p>
         </div>
     </div>
 
     <div class="noticias">
-        <a href="noticias/alcione.html"> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia4.jpg"> </a>
-        <div class="titulo_noticia"> 
+        <a href="noticias/alcione.html"> <img style="height: 200px; width: 285px;"
+                src="assets/imagens_site/noticia4.jpg"> </a>
+        <div class="titulo_noticia">
             <span style="margin-top: 30px;">
-               <a href="noticias/alcione.html"> MPB: Alcione é homenageada pelo Prêmio da Música Brasileira e louvada por artistas em sarau </a>
+                <a href="noticias/alcione.html"> MPB: Alcione é homenageada pelo Prêmio da Música Brasileira e louvada
+                    por artistas em sarau </a>
             </span>
         </div>
         <div style="margin-top: 30px;" class="creditos">
-           <p> Por Gustavo Zeitel </p>
+            <p> Por Gustavo Zeitel </p>
         </div>
     </div>
 
     <div class="noticias">
-        <a href="noticias/matue.html"> <img style="height: 200px; width: 285px;" src="assets/imagens_site/noticia5.webp"> </a>
-        <div class="titulo_noticia"> 
+        <a href="noticias/matue.html"> <img style="height: 200px; width: 285px;"
+                src="assets/imagens_site/noticia5.webp"> </a>
+        <div class="titulo_noticia">
             <span style="margin-top: 30px;">
-               <a href="noticias/matue.html"> Nacional: Matuê tem melhor estreia do rap nacional no Spotify </a>
+                <a href="noticias/matue.html"> Nacional: Matuê tem melhor estreia do rap nacional no Spotify </a>
             </span>
         </div>
         <div style="margin-top: 65px;" class="creditos">
-           <p> Por Maria Dulce Miranda </p>
+            <p> Por Maria Dulce Miranda </p>
         </div>
     </div>
 
@@ -392,7 +435,7 @@
         "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",
         "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>",
         "<img style='height: 620px; width: 94%;margin-left: 43px;' src=assets/imagens_site/imagem_home6.jpg>"
-        ]
+    ]
 
     function imagens_home() {
         var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
@@ -400,7 +443,84 @@
     }
 </script>
 
- <script>
+<script>
+
+    var contadorRock = 0;
+    var contadorPop = 0;
+    var contadorIndie = 0;
+    var contadorReb = 0;
+    var contadorMpb = 0;
+    var contadorRap = 0;
+
+    var lista_musicas_rock = ["Dumb - Nirvana", "Dream On - Aerosmith", "Paranoid - Black Sabbath", "Time - Pink Floyd", "A Cera - O Surto", "Scar Tissue - Red Hot Chilli Peppers", "Fireside - Arctic Monkeys", "Quando o sol se for - Detonautas", "Bohemian Rhapsody - Quuen", "Trouble - Cage The Elephant", "Vicios e Virtudes - Charçie Brown Jr.", "About A Girl - Nirvana"];
+    var lista_musicas_pop = ["bellyache - Billie Eilish", "cardigan - Taylor Swift", "You Right - Doja Cat", "Treasure - Bruno Mars", "Umbrella - Rihanna", "E.T. - Katy Perry", "Kill Bill - SZA", "Maps - Marron 5", "Wonder - Shawn Mendes", "Habits - Tove Lo","Less Than Zero - The Weeknd", "Million Dollar Man - Lana Del Rey", "Stressed Out - Twenty One Pilots"];
+    var lista_musicas_indie = ["Breezeblocks - alt-J", "Imagination - Foster The People", "Dark Red - Steve Lacy", "Apocalypse - Cigarrettes After Sex", "505 - Arctic Monkeys", "Eventually - Tame Impala", "Trouble - Cage The Elephant", "Oitavo Andar - Clarice Falcão", "Sofia - Clairo", "Dead Knot - cehryl", "Safe And Sound - Capital Cities", "Controllah - Gorillaz, MC Bin Laden"];
+    var lista_musicas_reb = ["Novacane - Frank Ocean", "Best Interest - Tyler, The Creator", "Woo - Rihanna", "All The Stars - Kendrick Lamar, SZA", "Heartless - Kanye West", "No Love - Summaer Walker", "So Anxious - Ginuwine", "Call Out My Name - The Weeknd", "Been Away - Brent Faiyaz", "Sorrows - Bryson Tiller", "Blind - SZA", "Lost - Frank Ocean"];
+    var lista_musicas_mpb = ["Por Onde Andei - Nando Reis", "Como Eu Quero - Kid Abelha", "Onde Anda Você - Toquinho, Vinicius de Moraes", "Outra Vida - Armandinho", "Apesar de Você - Chico Buarque", "Mania de Você - Rita Lee", "Carolina, Carol Bela - Jorge Ben", "Malandragem - Cassia Eller", "Preciso Me Encontrar - Cartola", "Eduardo E Mônica - Legião Urbana", "Oceano - Djavan", "Cotidiano - Chico Buarque", "Pela Luz dos Olhos Teus - Vinícius de Moraes"];
+    var lista_musicas_rap = ["No Role Modelz - J. Cole", "No church In The Wild - Jay-Z, Kanye West", "Favela Sinistra - Trilha Sonora do Gueto", "It Was A Good Day - Ice Cube", "Canão Foi Tão Bom - Sabotage", "5% TINT - Travis Scott", "God's Plan - Drake", "Auto Ajuda - FBC", "These Walls - Kendrick Lamar", "The Real Slim Shady - Eminem", "Visão Ampla - BK", " Day 'N' Nite - Kid Cudi", "Corra - Djonga"];
+
+
+    function ver_musicas() {
+        exibir.innerHTML = ``
+        var genero = opcoes_generos.value;
+
+        if (genero == "Rock") {
+
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rock.length - 2));
+
+            while (contadorRock < 3) {
+                exibir.innerHTML += `<p>${lista_musicas_rock[musica_aleatoria + contadorRock]}</p> <br>`
+                console.log(musica_aleatoria)
+                contadorRock++
+            }
+        }
+        else if (genero == "Pop") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_pop.length - 2));
+
+            while (contadorPop < 3) {
+                exibir.innerHTML += `<p>${lista_musicas_pop[musica_aleatoria + contadorPop]}</p> <br>`
+                contadorPop++
+            }
+        }
+        else if (genero == "Indie") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_indie.length - 2));
+
+            while (contadorIndie < 3) {
+                exibir.innerHTML += `<p>${lista_musicas_indie[musica_aleatoria + contadorIndie]}</p> <br>`
+                contadorIndie++
+            }
+        }
+        else if (genero == "R&B") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_reb.length - 2));
+
+            while (contadorReb < 3) {
+                exibir.innerHTML += `<p>${lista_musicas_reb[musica_aleatoria + contadorReb]}</p> <br>`
+                contadorReb++
+            }
+        }
+        else if (genero == "MPB") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_mpb.length - 2));
+
+            while (contadorMpb < 3) {
+                exibir.innerHTML += `<p>${lista_musicas_mpb[musica_aleatoria + contadorMpb]}</p> <br>`
+                contadorMpb++
+            }
+        }
+        else if (genero == "Rap") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rap.length - 2));
+
+            while (contadorRap < 3) {
+                exibir.innerHTML += `<p>${lista_musicas_rap[musica_aleatoria + contadorRap]}</p> <br>`
+                contadorRap++
+            }
+        }
+        else if (genero == "Escolha um Gênero") {
+            exibir.innerHTML = `<p>Escolha um gênero!</p>`
+        }
+    }
+</script>
+
+<script>
 
     const labels = [
         'Musica1',
@@ -460,11 +580,11 @@
         config2
     );
 
-</script> 
+</script>
 
 <script>
 
-var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
+    var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
         "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
         "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home3.jpg>",
         "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",

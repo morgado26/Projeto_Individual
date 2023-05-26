@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Você só pode ver uma vez por dia cada gênero</h2>
+    Escolha um gênero <select id="opcoes_generos">
+        <option>Escolha um Gênero</option>
+        <option>Rock</option>
+        <option>Pop</option>
+        <option>Indie</option>
+        <option>R&B</option>
+        <option>MPB</option>
+        <option>Rap</option>
+    </select> <br>
+    <button onclick="ver_musicas()">Ver Músicas</button>
+    <div id="exibir"></div>
+</body>
+
+</html>
+
+<script>
+
+    var contadorRock = 0;
+    var contadorPop = 0;
+    var contadorIndie = 0;
+    var contadorReb = 0;
+    var contadorMpb = 0;
+    var contadorRap = 0;
+
+    var lista_musicas_rock = ["rock1", "rock2", "rock3", "rock4", "rock5", "rock6", "rock7", "rock8", "rock9", "rock10"];
+    var lista_musicas_pop = ["pop1", "pop2", "pop3", "pop4", "pop5", "pop6", "pop7", "pop8", "pop9", "pop10"];
+    var lista_musicas_indie = ["indie1", "indie2", "indie3", "indie4", "indie5", "indie6", "indie7", "indie8", "indie9", "indie10"];
+    var lista_musicas_reb = ["reb1", "reb2", "reb3", "reb4", "reb5", "reb6", "reb7", "reb8", "reb9", "reb10"];
+    var lista_musicas_mpb = ["mpb1", "mpb2", "mpb3", "mpb4", "mpb5", "mpb6", "mpb7", "mpb8", "mpb9", "mpb10"];
+    var lista_musicas_rap = ["rap1", "rap2", "rap3", "rap4", "rap5", "rap6", "rap7", "rap8", "rap9", "rap10"];
+
+
+    function ver_musicas() {
+        exibir.innerHTML = ``
+        var genero = opcoes_generos.value;
+
+        if (genero == "Rock") {
+
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rock.length - 2));
+                        
+            while (contadorRock < 3) {
+                exibir.innerHTML += `${lista_musicas_rock[musica_aleatoria + contadorRock]} <br>`
+                console.log(musica_aleatoria)
+                contadorRock++
+            }
+        }
+        else if (genero == "Pop") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_pop.length - 2));
+            
+            while (contadorPop < 3) {
+                exibir.innerHTML += `${lista_musicas_pop[musica_aleatoria + contadorPop]} <br>`
+                contadorPop++
+            }
+        }
+        else if (genero == "Indie") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_indie.length - 2));
+
+            while(contadorIndie < 3){
+                exibir.innerHTML += `${lista_musicas_indie[musica_aleatoria + contadorIndie]} <br>`
+                contadorIndie++
+            }
+        }
+        else if (genero == "R&B") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_reb.length - 2));
+
+            while(contadorReb < 3){
+                exibir.innerHTML += `${lista_musicas_reb[musica_aleatoria + contadorReb]} <br>`
+                contadorReb++
+            }
+        }
+        else if (genero == "MPB") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_mpb.length - 2));
+
+            while(contadorMpb < 3){
+                exibir.innerHTML += `${lista_musicas_mpb[musica_aleatoria + contadorMpb]} <br>`
+                contadorMpb++
+            }
+        }
+        else if (genero == "Rap") {
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rap.length - 2));
+
+            while(contadorRap < 3){
+                exibir.innerHTML += `${lista_musicas_rap[musica_aleatoria + contadorRap]} <br>`
+                contadorRap++
+            }
+        }
+        else if (genero == "Escolha um Gênero") {
+            exibir.innerHTML = `escolha um gênero!`
+        }
+    }
+</script>

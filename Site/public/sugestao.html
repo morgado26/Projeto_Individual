@@ -27,7 +27,7 @@
 
 <script>
 
-    var contadorRock = 0;
+   
     var contadorPop = 0;
     var contadorIndie = 0;
     var contadorReb = 0;
@@ -45,14 +45,16 @@
     function ver_musicas() {
         exibir.innerHTML = ``
         var genero = opcoes_generos.value;
+        var contadorRock = 0;
 
         if (genero == "Rock") {
 
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rock.length - 2));
+            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rock.length));
                         
             while (contadorRock < 3) {
                 exibir.innerHTML += `${lista_musicas_rock[musica_aleatoria + contadorRock]} <br>`
                 console.log(musica_aleatoria)
+                lista_musicas_rock.splice(musica_aleatoria,1)
                 contadorRock++
             }
         }

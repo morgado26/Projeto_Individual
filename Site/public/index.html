@@ -5,412 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Início</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/imagens_site/icon.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
-    <script src="../js/funcoes.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
-    <script src="http://www.chartjs.org/samples/latest/utils.js"></script> -->
 </head>
 
-<body onload="imagens_home()">
-
-    <div class="navbar">
+<body>
+    <div class="navbarInicio">
         <h1 class="titulo">
-            <b> <a href="index.html"> TOP 50 </a> </b>
+            <b>  TOP 50 </b>
         </h1>
         <div class="itens">
-            <p class="lista">
-                <a href="javascript:window.scrollTo({left: 0,top: 1400, behavior: 'smooth'})"> Rankings </a>
-            </p>
-
-            <p class="playlists">
-                <a href="javascript:window.scrollTo({left: 0,top: 3250, behavior: 'smooth'})"> Quiz </a>
-            </p>
-
             <p>
-                <a href="javascript:window.scrollTo({left: 0,top: 5450, behavior: 'smooth'})">Gráficos</a>
+                <a href="login.html"> Login </a>
             </p>
-
             <p>
-                <a href="javascript:window.scrollTo({left: 0,top: 6420, behavior: 'smooth'})">Notícias</a>
+                <button> <a href="cadastro.html">Cadastro</a> </button>
             </p>
         </div>
     </div>
 
-    <div class="container">
-        <span class="bem_vindo">SEJA BEM VINDO AO TOP50</span>
-    </div>
-    <div class="container">
-        <span class="mensagem_boas_vindas">Seu melhor portal especializado em música!</span>
-    </div>
-
-    <div class="container">
-        <div id="imagem_home" class="imagem_home"></div>
+    <div class="container_imagem">
+        <div class="imagens_inicio">
+            <img style="height: 500px;" width="450px" src="assets/imagens_site/ihatebeingbipolar.jpg" alt="">
+            <img style="height: 500px;" width="450px" src="assets/imagens_site/melodrama.jpg" alt="">
+            <img style="height: 500px;" width="450px" src="assets/imagens_site/flower_boy.webp" alt="">
+            <h1>TOP 50</h1>
+        </div>
     </div>
 
-    <div class="container">
-        <span style="margin-top: 75px;" class="mensagem_boas_vindas">Aproveite tudo que nosso site tem a ofercer!</span>
+
+    <div class="descricao">
+        <div class="container_imagem">
+            Acompanhe rankings de diversos tipos
+        </div>
+        <div class="container_imagem">
+            Teste seus conhecimentos no mundo da musica
+        </div>
+        <div class="container_imagem">
+            Fique por dentro de tudo!
+        </div>
     </div>
 
-    <div class="container">
-        <div class="titulo_ranking">RANKINGS TOP 50</div>
+    <div class="container_imagem">
+        <div class="botao_comece_agora">
+            <button><a href="cadastro.html"> Comece agora!</a></button>
+        </div>
     </div>
 
-    <!-- <div class="texto-user">
-        <span>Bem-vindo</span>
-        <span id="b_usuario"></span>
+    <div class="container_imagem">
+        <div class="mensagem">
+            <p>A plataforma para amantes da música</p>
+        </div>
+    </div>
+
+    <div class="print_ranking">
+        <img style="height: 550px;" width="600px" src="assets/imagens_site/print_ranking.png" alt="">
+    </div>
+
+    <div class="descricao_tudo">
+        <h1 class="titulo_funcionalidades">RANKINGS</h1>
+        <p class="descricao_rankings">Acompanhe os mais diferentes rankings <br> disponíveis para saber o que está em
+            alta, <br>
+            conhecer músicas novas, e comparar seu <br> gosto musical.</p>
+    </div>
+
+    <div class="descricao_tudo2">
+        <img class="imagem_ranking" src="assets/imagens_site/print_quiz.png" alt="">
+        <h1>Testes</h1>
+        <p>Use os quizzes para testar seus <br> conhecimentos
+            do mundo da<br> música, para desafiar seus amigos <br>
+            e claro, se divertir!</p>
+    </div>
+
+    <div class="print_enriquecer">
+        <img style="height: 550px;" width="650px" src="assets/imagens_site/print_enriquecer.png" alt="">
+    </div>
+
+    <div class="descricao_tudo">
+        <h1 class="titulo_funcionalidades_3">ENRIQUECER</h1>
+        <p style="font-size: 37px;" class="descricao_rankings">Descubra músicas novas, ampliando <br> seu gosto musical, com nosso <br> sistema próprio, que sorteia músicas <br>
+        baseado no seu gosto pessoal.</p>
+    </div>
+<!-- 
+    <div class="descricao_tudo2">
+        <img class="imagem_ranking" src="assets/imagens_site/print_noticias.png" alt="">
+        <h1>Testes</h1>
+        <p>Use os quizzes para testar seus <br> conhecimentos
+            do mundo da<br> música, para desafiar seus amigos <br>
+            e claro, se divertir!</p>
     </div> -->
 
-    <div class="container">
-        <div class="quadrado">
-            <div class="div_cabecalho">
-                <div class="barra1"></div>
-                <p> Top 50 </p>
-                <div class="barra2"></div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/born_to_die.jpg" alt="">
-                <span>1</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        Summertime Sadness (2012) -<br>
-                    </b>
-                    Lana Del Rey
-                </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/mr.morale.jpg" alt="">
-                <span>2</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        United In Grief (2022) -<br>
-                    </b>
-                    Kendrick Lamar
-                </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/N_anavitoria.jpg" alt="">
-                <span>3</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        As coisas tão mais lindas (2019) -<br>
-                    </b>
-                    ANAVITÓRIA
-                </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/graduation.jpg" alt="">
-                <span>4</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        Flashing Lights (2007) -<br>
-                    </b>
-                    Kanye West
-                </div>
-            </div>
-            <div class="coluna">
-                <img style="height: 130px;" width="130px" src="assets/Imagens/amarElo.jpg" alt="">
-                <span>5</span>
-                <div class="linha-vertical2"></div>
-                <div class="dados_musicas">
-                    <b class="nome_musica">
-                        A Ordem Natural das Coisas (2019) -<br>
-                    </b>
-                    Emicida
-                </div>
-            </div>
-            <div class="ver_tudo">
-                <p style="font-size: 32px; margin-top: 32px;"> <a href="rankings/top_50.html"> Ver Tudo </a> </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container2">
-        <div class="quadrado_menor">
-            <div class="faixa">
-                <p>Top 50 Nacional</p>
-            </div>
-            <div class="albuns">
-                <div class="nomes">
-                    <img style="height: 110px;" width="110px" src="assets/Imagens/apesar_de_voce.jpg" alt="">
-                    <span>1</span>
-                    <div class="linha-vertical"></div>
-                    <div class="dados_albuns">
-                        <b>
-                            <p>Apesar de Você</p>
-                        </b>
-                        <p>Chico Buarque</p>
-                    </div>
-                </div>
-                <div class="nomes">
-                    <img style="height: 110px;" width="110px" src="assets/Imagens/dois_legiao.jpg" alt="">
-                    <span>2</span>
-                    <div class="linha-vertical"></div>
-                    <div class="dados_albuns">
-                        <b>
-                            <p>Índios</p>
-                        </b>
-                        <p>Legião Urbana</p>
-                    </div>
-                </div>
-                <div class="nomes">
-                    <img style="height: 110px;" width="110px" src="assets/Imagens/Bocas_Ordinárias.jpg" alt="">
-                    <span>3</span>
-                    <div class="linha-vertical"></div>
-                    <div class="dados_albuns">
-                        <b>
-                            <p>Só Por Uma Noite</p>
-                        </b>
-                        <p>Charlie Brown Jr.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="ver_tudo">
-                <p> <a href="rankings/nacional.html"> Ver Tudo </a> </p>
-            </div>
-        </div>
-
-        <div class="quadrado_menor2">
-            <div class="faixa">
-                <p>Top 50 Álbuns</p>
-            </div>
-            <div class="albuns">
-                <div class="nomes">
-                    <img style="height: 110px;" width="110px" src="assets/Imagens/the_dark_side.png" alt="">
-                    <span>1</span> <br>
-                    <div class="linha-vertical"></div>
-                    <div class="dados_albuns">
-                        <b>
-                            <p> The Dark Side <br> of the Moon</p>
-                        </b>
-                        <p>Pink Floyd</p>
-                    </div>
-                </div>
-                <div class="nomes">
-                    <img style="height: 110px;" width="110px" src="assets/Imagens/dawnFM.jpg" alt="">
-                    <span>2</span> <br>
-                    <div class="linha-vertical"></div>
-                    <div class="dados_albuns">
-                        <b>
-                            <p>Dawn FM</p>
-                        </b>
-                        <p>The Weeknd</p>
-                    </div>
-                </div>
-                <div class="nomes">
-                    <img style="height: 110px;" width="110px" src="assets/Imagens/nada_como_um_dia.jpg" alt="">
-                    <span>3</span> <br>
-                    <div class="linha-vertical"></div>
-                    <div class="dados_albuns">
-                        <b>
-                            <p> Nada Como um Dia <br> Após o Outro Dia</p>
-                        </b>
-                        <p>Racionais MC's</p>
-                    </div>
-                </div>
-            </div>
-            <div class="ver_tudo">
-                <p> <a href="rankings/albuns.html"> Ver Tudo </a> </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="titulo_conhecimento">TESTE SEU CONHECIMENTO</div>
-    </div>
-
-    <div class="container_quiz">
-        <div class="quiz1">
-            <div style="height: 90px;" class="faixa">
-                <p style="font-size: 27px;">Qual a Música?</p>
-            </div>
-            <div style="margin-top: 20px;" class="container_card">
-                <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_qual_musica.jpg" alt="">
-            </div> <br>
-            <div class="faixa_jogar">
-                <p> <a href="quiz/quiz_qual_musica.html"> Jogar </a></p>
-            </div>
-        </div>
-
-        <div class="quiz2">
-            <div style="height: 90px;" class="faixa">
-                <p style="font-size: 27px;"> Adivinhe o Albúm Pela Capa </p>
-            </div>
-            <div style="margin-top: 20px;" class="container_card">
-                <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_albuns.png" alt="">
-            </div> <br>
-            <div class="faixa_jogar">
-                <p> <a href="quiz/quiz_capa_album.html"> Jogar </a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container_quiz">
-        <div class="quiz3">
-            <div style="height: 90px;" class="faixa">
-                <p style="font-size: 27px;">Complete a Música</p>
-            </div>
-            <div style="margin-top: 20px;" class="container_card">
-                <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_complete_musica.webp" alt="">
-            </div> <br>
-            <div class="faixa_jogar">
-                <p> <a href="quiz/quiz_complete_musica.html"> Jogar </a></p>
-            </div>
-        </div>
-
-        <div class="quiz4">
-            <div style="height: 90px;" class="faixa">
-                <p style="font-size: 27px;">Adivinhe o Artista</p>
-            </div>
-            <div style="margin-top: 20px;" class="container_card">
-                <img style="height: 300px;" width="320px" src="assets/imagens_site/quiz_adivinhe_artista.jpg" alt="">
-            </div> <br>
-            <div class="faixa_jogar">
-                <p> <a href="quiz/quiz_adivinhe_artista.html"> Jogar </a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="titulo_ranking">ENRIQUECER</div>
-    </div>
-
-    <div class="container">
-        <span class="texto_enriquecer">Conheça músicas novas baseadas em seus gêneros favoritos</span>
-    </div>
-
-    <div class="container">
-        <div class="card_enriquecer">
-            <div class="container">
-                <span class="descricao_enriquecer">Escolha um gênero, e te mostraremos três músicas para ampliar seu
-                    gosto musical</span>
-            </div>
-
-            <div class="container">
-                <select id="opcoes_generos">
-                    <option>Escolha um Gênero</option>
-                    <option>Rock</option>
-                    <option>Pop</option>
-                    <option>Indie</option>
-                    <option>R&B</option>
-                    <option>MPB</option>
-                    <option>Rap</option>
-                </select>
-            </div>
-            <div class="container">
-                <div id="exibir"></div>
-            </div>
-            <div class="container">
-                <button onclick="ver_musicas()">Ver Músicas</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="titulo_ranking">OS PREFERIDOS</div>
-    </div>
-
-    <div class="container">
-        <div class="mensagem_graficos">
-            <span>Acompanhe as músicas e álbuns mais votados <br></span>
-            <div class="container">
-                <span> como as favoritas de nossos usuários!</span>
-            </div>
-        </div>
-    </div>
-
-    <div class="container_graficos">
-        <div class="chart">
-            <canvas id="myChart"></canvas>
-        </div>
-
-        <div class="chart2">
-            <canvas id="myChart2"></canvas>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="titulo_ranking">NOTICIAS</div>
-    </div>
-
-    <div style="margin-top: 80px;" class="noticias">
-        <a href="noticias/thetown.html"> <img style="height: 200px; width: 285px;"
-                src="assets/imagens_site/noticia1.webp"> </a>
-        <div class="titulo_noticia">
-            <span>
-                <a href="noticias/thetown.html"> The Town: Foo Fighters e Bruno Mars esgotam ingressos; restam dias de
-                    Maroon 5 e Post Malone </a>
-            </span>
-        </div>
-        <div class="creditos">
-            <p> Por Léo Lopes </p>
-        </div>
-    </div>
-
-    <div class="noticias">
-        <a href="noticias/nirvana.html"> <img style="height: 200px; width: 285px;"
-                src="assets/imagens_site/noticia2.jpg"> </a>
-        <div class="titulo_noticia">
-            <span style="margin-top: 30px;">
-                <a href="noticias/nirvana.html"> Nirvana: Guitarra quebrada por Kurt Cobain é vendida por cerca de R$ 3
-                    milhões </a>
-            </span>
-        </div>
-        <div style="margin-top: 65px;" class="creditos">
-            <p> Por Lianne Kolirin </p>
-        </div>
-    </div>
-
-    <div class="noticias">
-        <a href="noticias/emicida.html"> <img style="height: 200px; width: 285px;"
-                src="assets/imagens_site/noticia3.jpg"> </a>
-        <div class="titulo_noticia">
-            <span style="margin-top: 40px;">
-                <a href="noticias/emicida.html"> Rap: Do pior ao melhor álbum do Emicida </a>
-            </span>
-        </div>
-        <div style="margin-top: 90px;" class="creditos">
-            <p> Por Murilo Morgado </p>
-        </div>
-    </div>
-
-    <div class="noticias">
-        <a href="noticias/alcione.html"> <img style="height: 200px; width: 285px;"
-                src="assets/imagens_site/noticia4.jpg"> </a>
-        <div class="titulo_noticia">
-            <span style="margin-top: 30px;">
-                <a href="noticias/alcione.html"> MPB: Alcione é homenageada pelo Prêmio da Música Brasileira e louvada
-                    por artistas em sarau </a>
-            </span>
-        </div>
-        <div style="margin-top: 30px;" class="creditos">
-            <p> Por Gustavo Zeitel </p>
-        </div>
-    </div>
-
-    <div class="noticias">
-        <a href="noticias/matue.html"> <img style="height: 200px; width: 285px;"
-                src="assets/imagens_site/noticia5.webp"> </a>
-        <div class="titulo_noticia">
-            <span style="margin-top: 30px;">
-                <a href="noticias/matue.html"> Nacional: Matuê tem melhor estreia do rap nacional no Spotify </a>
-            </span>
-        </div>
-        <div style="margin-top: 65px;" class="creditos">
-            <p> Por Maria Dulce Miranda </p>
-        </div>
-    </div>
-
-    <div class="footer">
+    <div style="margin-top: 200px;" class="footer">
         <p>
             <b>
                 Feito com amor por um aluno ♥ SPTECH © 2023
@@ -427,319 +113,3 @@
 </body>
 
 </html>
-
-<script>
-    var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
-        "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home3.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>",
-        "<img style='height: 620px; width: 94%;margin-left: 43px;' src=assets/imagens_site/imagem_home6.jpg>"
-    ]
-
-    function imagens_home() {
-        var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
-        imagem_home.innerHTML += `${lista_imagens[numero_aleatorio]}`
-    }
-</script>
-
-<script>
-
-    var contadorRock = 0;
-    var contadorPop = 0;
-    var contadorIndie = 0;
-    var contadorReb = 0;
-    var contadorMpb = 0;
-    var contadorRap = 0;
-
-    var lista_musicas_rock = ["Dumb - Nirvana", "Dream On - Aerosmith", "Paranoid - Black Sabbath", "Time - Pink Floyd", "A Cera - O Surto", "Scar Tissue - Red Hot Chilli Peppers", "Fireside - Arctic Monkeys", "Quando o sol se for - Detonautas", "Bohemian Rhapsody - Quuen", "Trouble - Cage The Elephant", "Vicios e Virtudes - Charçie Brown Jr.", "About A Girl - Nirvana"];
-    var lista_musicas_pop = ["bellyache - Billie Eilish", "cardigan - Taylor Swift", "You Right - Doja Cat", "Treasure - Bruno Mars", "Umbrella - Rihanna", "E.T. - Katy Perry", "Kill Bill - SZA", "Maps - Marron 5", "Wonder - Shawn Mendes", "Habits - Tove Lo","Less Than Zero - The Weeknd", "Million Dollar Man - Lana Del Rey", "Stressed Out - Twenty One Pilots"];
-    var lista_musicas_indie = ["Breezeblocks - alt-J", "Imagination - Foster The People", "Dark Red - Steve Lacy", "Apocalypse - Cigarrettes After Sex", "505 - Arctic Monkeys", "Eventually - Tame Impala", "Trouble - Cage The Elephant", "Oitavo Andar - Clarice Falcão", "Sofia - Clairo", "Dead Knot - cehryl", "Safe And Sound - Capital Cities", "Controllah - Gorillaz, MC Bin Laden"];
-    var lista_musicas_reb = ["Novacane - Frank Ocean", "Best Interest - Tyler, The Creator", "Woo - Rihanna", "All The Stars - Kendrick Lamar, SZA", "Heartless - Kanye West", "No Love - Summaer Walker", "So Anxious - Ginuwine", "Call Out My Name - The Weeknd", "Been Away - Brent Faiyaz", "Sorrows - Bryson Tiller", "Blind - SZA", "Lost - Frank Ocean"];
-    var lista_musicas_mpb = ["Por Onde Andei - Nando Reis", "Como Eu Quero - Kid Abelha", "Onde Anda Você - Toquinho, Vinicius de Moraes", "Outra Vida - Armandinho", "Apesar de Você - Chico Buarque", "Mania de Você - Rita Lee", "Carolina, Carol Bela - Jorge Ben", "Malandragem - Cassia Eller", "Preciso Me Encontrar - Cartola", "Eduardo E Mônica - Legião Urbana", "Oceano - Djavan", "Cotidiano - Chico Buarque", "Pela Luz dos Olhos Teus - Vinícius de Moraes"];
-    var lista_musicas_rap = ["No Role Modelz - J. Cole", "No church In The Wild - Jay-Z, Kanye West", "Favela Sinistra - Trilha Sonora do Gueto", "It Was A Good Day - Ice Cube", "Canão Foi Tão Bom - Sabotage", "5% TINT - Travis Scott", "God's Plan - Drake", "Auto Ajuda - FBC", "These Walls - Kendrick Lamar", "The Real Slim Shady - Eminem", "Visão Ampla - BK", " Day 'N' Nite - Kid Cudi", "Corra - Djonga"];
-
-
-    function ver_musicas() {
-        exibir.innerHTML = ``
-        var genero = opcoes_generos.value;
-
-        if (genero == "Rock") {
-
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rock.length - 2));
-
-            while (contadorRock < 3) {
-                exibir.innerHTML += `<p>${lista_musicas_rock[musica_aleatoria + contadorRock]}</p> <br>`
-                console.log(musica_aleatoria)
-                contadorRock++
-            }
-        }
-        else if (genero == "Pop") {
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_pop.length - 2));
-
-            while (contadorPop < 3) {
-                exibir.innerHTML += `<p>${lista_musicas_pop[musica_aleatoria + contadorPop]}</p> <br>`
-                contadorPop++
-            }
-        }
-        else if (genero == "Indie") {
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_indie.length - 2));
-
-            while (contadorIndie < 3) {
-                exibir.innerHTML += `<p>${lista_musicas_indie[musica_aleatoria + contadorIndie]}</p> <br>`
-                contadorIndie++
-            }
-        }
-        else if (genero == "R&B") {
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_reb.length - 2));
-
-            while (contadorReb < 3) {
-                exibir.innerHTML += `<p>${lista_musicas_reb[musica_aleatoria + contadorReb]}</p> <br>`
-                contadorReb++
-            }
-        }
-        else if (genero == "MPB") {
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_mpb.length - 2));
-
-            while (contadorMpb < 3) {
-                exibir.innerHTML += `<p>${lista_musicas_mpb[musica_aleatoria + contadorMpb]}</p> <br>`
-                contadorMpb++
-            }
-        }
-        else if (genero == "Rap") {
-            var musica_aleatoria = parseInt(Math.random() * (lista_musicas_rap.length - 2));
-
-            while (contadorRap < 3) {
-                exibir.innerHTML += `<p>${lista_musicas_rap[musica_aleatoria + contadorRap]}</p> <br>`
-                contadorRap++
-            }
-        }
-        else if (genero == "Escolha um Gênero") {
-            exibir.innerHTML = `<p>Escolha um gênero!</p>`
-        }
-    }
-</script>
-
-<script>
-
-    const labels = [
-        'Musica1',
-        'Musica2',
-        'Musica3',
-        'Musica4',
-        'Musica5'
-    ];
-
-    const data = {
-        labels: labels,
-        datasets: [{
-            data: [30, 29, 28, 25, 22],
-            backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
-            borderColor: 'white',
-        }
-        ]
-    };
-
-    const labels2 = [
-        'Musica1',
-        'Musica2',
-        'Musica3',
-        'Musica4',
-        'Musica5'
-    ];
-
-    const data2 = {
-        labels: labels2,
-        datasets: [{
-            data: [22, 24, 27, 23, 20],
-            backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
-            borderColor: 'white',
-        }]
-    };
-
-    const config = {
-        type: 'pie',
-        data: data
-    };
-
-    const config2 = {
-        type: 'pie',
-        data: data2,
-        options: {}
-    };
-</script>
-
-<script>
-    const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
-
-    const myChart2 = new Chart(
-        document.getElementById('myChart2'),
-        config2
-    );
-
-</script>
-
-<script>
-
-    var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
-        "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home3.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home4.jpg>",
-        "<img style='height: 620px; width: 94%; margin-left: 43px;' src=assets/imagens_site/imagem_home5.jpg>"]
-
-    function imagens_home() {
-        var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
-        imagem_home.innerHTML += `${lista_imagens[numero_aleatorio]}`
-    }
-
-    b_usuario.innerHTML = sessionStorage.NOME_USUARIO
-
-
-
-    let proximaAtualizacao;
-
-    window.onload = obterDadosGrafico(1);
-
-
-    function obterDadosGrafico(idAquario) {
-
-        if (proximaAtualizacao != undefined) {
-            clearTimeout(proximaAtualizacao);
-        }
-
-
-        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
-            if (response.ok) {
-                response.json().then(function (resposta) {
-                    console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                    plotarGrafico(resposta, idAquario);
-
-                });
-            } else {
-                console.error('Nenhum dado encontrado ou erro na API');
-            }
-        })
-            .catch(function (error) {
-                console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-            });
-    }
-
-    // Esta função plotarGrafico usa os dados capturados na função anterior para criar o gráfico
-    // Configura o gráfico (cores, tipo, etc), materializa-o na página e, 
-    // A função plotarGrafico também invoca a função atualizarGrafico
-    function plotarGrafico(resposta, idAquario) {
-        console.log('iniciando plotagem do gráfico...');
-
-        var dados = {
-            labels: [],
-            datasets: [
-                {
-                    label: '',
-
-                    data: []
-                },
-                {
-                    yAxisID: 'y-totalpersonagens',
-                    label: 'Musica Favorita',
-                    backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
-                    fill: true,
-                    data: []
-                }
-            ]
-        };
-
-        for (i = 0; i < resposta.length; i++) {
-            var registro = resposta[i];
-            dados.labels.push(registro.musica);
-            dados.datasets[0].data.push(registro.musica);
-            dados.datasets[1].data.push(registro.voto);
-            console.log(registro.voto)
-
-
-        }
-
-        console.log(JSON.stringify(dados));
-
-        var ctx = myChart.getContext('2d');
-        window.myChart = Chart.Bar(ctx, {
-            data: dados,
-            options: {
-                responsive: true,
-                animation: { duration: 900 },
-                hoverMode: 'index',
-                stacked: false,
-                title: {
-                    display: true,
-                    text: 'Os Personagens mais Escolhidos'
-                },
-
-                scales: {
-                    yAxes: [{
-                        type: 'linear',
-                        display: true,
-                        position: 'left',
-                        id: 'y-totalpersonagens',
-                        ticks: {
-                            beginAtZero: true,
-                            max: 50,
-                            min: 0
-                        }
-                    }, {
-                        display: false,
-                    }],
-                }
-            }
-        });
-
-
-
-        // Esta função atualizarGrafico atualiza o gráfico que foi renderizado na página,
-        // buscando a última medida inserida em tabela contendo as capturas, 
-
-        //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
-        //     Para ajustar o "select", ajuste o comando sql em src/models
-        function atualizarGrafico(idAquario, dados) {
-
-            fetch(`/medidas/tempo-real/${idAquario}`, { cache: 'no-store' }).then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (novoRegistro) {
-
-                        console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
-                        console.log(dados);
-
-                        for (i = 0; i < novoRegistro.length; i++) {
-                            var registro = novoRegistro[i];
-                            // tirando e colocando valores no gráfico
-                            dados.labels.shift(); // apagar o primeiro
-                            dados.labels.push(registro.musica);// incluir um novo momento
-
-                            dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-                            dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
-
-                            dados.datasets[1].data.shift();
-                            dados.datasets[1].data.push(registro.voto);
-                        }
-
-                        window.myChart.update();
-
-                        // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-                        proximaAtualizacao = setTimeout(() => atualizarGrafico(idAquario, dados), 2000);
-                    });
-                } else {
-                    console.error('Nenhum dado encontrado ou erro na API');
-                    // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-                    proximaAtualizacao = setTimeout(() => atualizarGrafico(idAquario, dados), 200000);
-                }
-            })
-                .catch(function (error) {
-                    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-                });
-
-        }
-
-    }
-
-</script>

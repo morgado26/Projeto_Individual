@@ -8,16 +8,17 @@
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="assets/imagens_site/icon.png" type="image/x-icon">
+    <script src="js/imagem_home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/3f0399636b.js" crossorigin="anonymous"></script>
-    <script src="../js/funcoes.js"></script>
+    <!-- <script src="../js/funcoes.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="http://www.chartjs.org/dist/2.7.1/Chart.js"></script>
-    <script src="http://www.chartjs.org/samples/latest/utils.js"></script> -->
+    <script src="http://www.chartjs.org/samples/latest/utils.js"></script>
 </head>
 
-<body onload="imagens_home()">
+<body>
 
     <div class="navbar">
         <h1 class="titulo">
@@ -54,7 +55,8 @@
     </div>
 
     <div class="container">
-        <span style="margin-top: 75px;" class="mensagem_boas_vindas">Aproveite tudo que nosso site tem a oferecer!</span>
+        <span style="margin-top: 75px;" class="mensagem_boas_vindas">Aproveite tudo que nosso site tem a
+            oferecer!</span>
     </div>
 
     <div class="container">
@@ -441,9 +443,7 @@
         var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
         imagem_home.innerHTML += `${lista_imagens[numero_aleatorio]}`
     }
-</script>
 
-<script>
 
     var contadorRock = 0;
     var contadorPop = 0;
@@ -453,7 +453,7 @@
     var contadorRap = 0;
 
     var lista_musicas_rock = ["Dumb - Nirvana", "Dream On - Aerosmith", "Paranoid - Black Sabbath", "Time - Pink Floyd", "A Cera - O Surto", "Scar Tissue - Red Hot Chilli Peppers", "Fireside - Arctic Monkeys", "Quando o sol se for - Detonautas", "Bohemian Rhapsody - Queen", "Trouble - Cage The Elephant", "Vicios e Virtudes - Charçie Brown Jr.", "About A Girl - Nirvana"];
-    var lista_musicas_pop = ["bellyache - Billie Eilish", "cardigan - Taylor Swift", "You Right - Doja Cat", "Treasure - Bruno Mars", "Umbrella - Rihanna", "E.T. - Katy Perry", "Kill Bill - SZA", "Maps - Marron 5", "Wonder - Shawn Mendes", "Habits - Tove Lo","Less Than Zero - The Weeknd", "Million Dollar Man - Lana Del Rey", "Stressed Out - Twenty One Pilots"];
+    var lista_musicas_pop = ["bellyache - Billie Eilish", "cardigan - Taylor Swift", "You Right - Doja Cat", "Treasure - Bruno Mars", "Umbrella - Rihanna", "E.T. - Katy Perry", "Kill Bill - SZA", "Maps - Marron 5", "Wonder - Shawn Mendes", "Habits - Tove Lo", "Less Than Zero - The Weeknd", "Million Dollar Man - Lana Del Rey", "Stressed Out - Twenty One Pilots"];
     var lista_musicas_indie = ["Breezeblocks - alt-J", "Imagination - Foster The People", "Dark Red - Steve Lacy", "Apocalypse - Cigarrettes After Sex", "505 - Arctic Monkeys", "Eventually - Tame Impala", "Trouble - Cage The Elephant", "Oitavo Andar - Clarice Falcão", "Sofia - Clairo", "Dead Knot - cehryl", "Safe And Sound - Capital Cities", "Controllah - Gorillaz, MC Bin Laden"];
     var lista_musicas_reb = ["Novacane - Frank Ocean", "Best Interest - Tyler, The Creator", "Woo - Rihanna", "All The Stars - Kendrick Lamar, SZA", "Heartless - Kanye West", "No Love - Summaer Walker", "So Anxious - Ginuwine", "Call Out My Name - The Weeknd", "Been Away - Brent Faiyaz", "Sorrows - Bryson Tiller", "Blind - SZA", "Lost - Frank Ocean"];
     var lista_musicas_mpb = ["Por Onde Andei - Nando Reis", "Como Eu Quero - Kid Abelha", "Onde Anda Você - Toquinho, Vinicius de Moraes", "Outra Vida - Armandinho", "Apesar de Você - Chico Buarque", "Mania de Você - Rita Lee", "Carolina, Carol Bela - Jorge Ben", "Malandragem - Cassia Eller", "Preciso Me Encontrar - Cartola", "Eduardo E Mônica - Legião Urbana", "Oceano - Djavan", "Cotidiano - Chico Buarque", "Pela Luz dos Olhos Teus - Vinícius de Moraes"];
@@ -518,71 +518,58 @@
             exibir.innerHTML = `<p>Escolha um gênero!</p>`
         }
     }
-</script>
 
-<script>
+    // const labels = [
+    //     'Musica1',
+    //     'Musica2',
+    //     'Musica3',
+    //     'Musica4',
+    //     'Musica5'
+    // ];
 
-    const labels = [
-        'Musica1',
-        'Musica2',
-        'Musica3',
-        'Musica4',
-        'Musica5'
-    ];
+    // const data = {
+    //     labels: labels,
+    //     datasets: [{
+    //         data: [30, 29, 28, 25, 22],
+    //         backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
+    //         borderColor: 'white',
+    //     }
+    //     ]
+    // };
 
-    const data = {
-        labels: labels,
-        datasets: [{
-            data: [30, 29, 28, 25, 22],
-            backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
-            borderColor: 'white',
-        }
-        ]
-    };
+    //     const labels2 = [
+    //         'Musica1',
+    //         'Musica2',
+    //         'Musica3',
+    //         'Musica4',
+    //         'Musica5'
+    //     ];
 
-    const labels2 = [
-        'Musica1',
-        'Musica2',
-        'Musica3',
-        'Musica4',
-        'Musica5'
-    ];
+    //     const data2 = {
+    //         labels: labels2,
+    //         datasets: [{
+    //             data: [22, 24, 27, 23, 20],
+    //             backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
+    //             borderColor: 'white',
+    //         }]
+    //     };
 
-    const data2 = {
-        labels: labels2,
-        datasets: [{
-            data: [22, 24, 27, 23, 20],
-            backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
-            borderColor: 'white',
-        }]
-    };
 
-    const config = {
-        type: 'pie',
-        data: data
-    };
 
-    const config2 = {
-        type: 'pie',
-        data: data2,
-        options: {}
-    };
-</script>
+    //     const config2 = {
+    //         type: 'pie',
+    //         data: data2,
+    //         options: {}
+    //     };
+    //
 
-<script>
-    const myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-    );
 
-    const myChart2 = new Chart(
-        document.getElementById('myChart2'),
-        config2
-    );
 
-</script>
+    //     const myChart2 = new Chart(
+    //         document.getElementById('myChart2'),
+    //         config2
+    //     );
 
-<script>
 
     var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
         "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
@@ -592,30 +579,29 @@
 
     function imagens_home() {
         var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
-        imagem_home.innerHTML += `${lista_imagens[numero_aleatorio]}`
+        imagem_home.innerHTML = `${lista_imagens[numero_aleatorio]}`
     }
 
-    b_usuario.innerHTML = sessionStorage.NOME_USUARIO
+    // b_usuario.innerHTML = sessionStorage.NOME_USUARIO
 
+    // let proximaAtualizacao;
 
+    window.onload = criarGraficos();
 
-    let proximaAtualizacao;
+    function criarGraficos() {
+        obterDadosGrafico(1);
+        obterDadosGrafico(2);
+        imagens_home()
+    }
 
-    window.onload = obterDadosGrafico(1);
+    function obterDadosGrafico(xpto) {
+        console.log(`${xpto}`)
 
-
-    function obterDadosGrafico(idAquario) {
-
-        if (proximaAtualizacao != undefined) {
-            clearTimeout(proximaAtualizacao);
-        }
-
-
-        fetch(`/medidas/ultimas/${idAquario}`, { cache: 'no-store' }).then(function (response) {
+        fetch(`/medidas/ultimas/${xpto}`, { cache: 'no-store' }).then(function (response) {
             if (response.ok) {
                 response.json().then(function (resposta) {
                     console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-                    plotarGrafico(resposta, idAquario);
+                    plotarGrafico(resposta, xpto);
 
                 });
             } else {
@@ -630,69 +616,143 @@
     // Esta função plotarGrafico usa os dados capturados na função anterior para criar o gráfico
     // Configura o gráfico (cores, tipo, etc), materializa-o na página e, 
     // A função plotarGrafico também invoca a função atualizarGrafico
-    function plotarGrafico(resposta, idAquario) {
-        console.log('iniciando plotagem do gráfico...');
+    function plotarGrafico(resposta, xpto) {
+        if (xpto == 1) {
+            console.log('iniciando plotagem do gráfico...');
 
-        var dados = {
-            labels: [],
-            datasets: [
-                {
-                    label: '',
+            let labels = [];
 
-                    data: []
-                },
-                {
-                    yAxisID: 'y-totalpersonagens',
-                    label: 'Musica Favorita',
-                    backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
-                    fill: true,
-                    data: []
-                }
-            ]
-        };
+            var dados = {
+                labels: labels,
+                    options:{
+                        legend:{
+                            display:false
+                        }
+                    },
+                datasets: [
+                    {
+                        label: '',
 
-        for (i = 0; i < resposta.length; i++) {
-            var registro = resposta[i];
-            dados.labels.push(registro.musica);
-            dados.datasets[0].data.push(registro.musica);
-            dados.datasets[1].data.push(registro.voto);
-            console.log(registro.voto)
+                        data: []
+                    },
+                    {
+                        yAxisID: 'y-totalpersonagens',
+                        label: 'Musica Favorita',
+                        backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
+                        fill: true,
+                        data: []
+                    }
+                ]
+            };
 
+
+
+            for (i = 0; i < resposta.length; i++) {
+                var registro = resposta[i];
+                // dados.labels.push(registro.musica);
+                labels.push(registro.musica);
+                dados.datasets[1].data.push(registro.voto);
+                // console.log(registro.musica);
+                // console.log(registro.voto);
+                console.log(dados.labels);
+                console.log(labels);
+            }
+
+
+            const config = {
+                type: 'pie',
+                data: dados
+            };
+
+
+            const myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+            );
+
+
+
+            console.log(JSON.stringify(dados));
+
+
+        } else if(xpto==2){
+            let labels2 = [];
+
+            var dados2 = {
+                labels: labels2,
+                datasets: [
+                    {
+                        label: '',
+
+                        data: []
+                    },
+                    {
+                        yAxisID: 'y-totalpersonagens',
+                        label: 'Musica Favorita',
+                        backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
+                        fill: true,
+                        data: []
+                    }
+                ]
+            };
+
+            for (i = 0; i < resposta.length; i++) {
+                var registro = resposta[i];
+                // dados.labels.push(registro.musica);
+                labels2.push(registro.album);
+                dados2.datasets[1].data.push(registro.voto);
+                // console.log(registro.musica);
+                // console.log(registro.voto);
+                console.log(dados2.labels);
+                console.log(labels2);
+            }
+
+            const config2 = {
+                type: 'pie',
+                data: dados2
+            };
+
+            const myChart2 = new Chart(
+                document.getElementById('myChart2'),
+                config2
+            );
+            console.log(JSON.stringify(dados2));
 
         }
 
-        console.log(JSON.stringify(dados));
 
-        var ctx = myChart.getContext('2d');
-        window.myChart = Chart.Bar(ctx, {
-            data: dados,
-            options: {
-                responsive: true,
-                animation: { duration: 900 },
-                hoverMode: 'index',
-                stacked: false,
-                title: {
-                    display: true,
-                    text: 'Os Personagens mais Escolhidos'
-                },
 
-                scales: {
-                    yAxes: [{
-                        type: 'linear',
-                        display: true,
-                        position: 'left',
-                        id: 'y-totalpersonagens',
-                        ticks: {
-                            beginAtZero: true,
-                            max: 50,
-                            min: 0
-                        }
-                    }, {
-                        display: false,
-                    }],
-                }
-            }
-        });
+
+        // var ctx = myChart.getContext('2d');
+        // window.myChart = Chart.Bar(ctx, {
+        //     data: dados,
+        //     options: {
+        //         responsive: true,
+        //         animation: { duration: 900 },
+        //         hoverMode: 'index',
+        //         stacked: true,
+        //         title: {
+        //             display: true,
+        //             text: 'Os Personagens mais Escolhidos'
+        //         },
+
+        //         scales: {
+        //             yAxes: [{
+        //                 type: 'pie',
+        //                 display: true,
+        //                 position: 'left',
+        //                 id: 'y-totalpersonagens',
+        //                 ticks: {
+        //                     beginAtZero: true,
+        //                     max: 50,
+        //                     min: 0
+        //                 }
+        //             }, {
+        //                 display: false,
+        //             }],
+        //         }
+        //     }
+        // });
 
 
 
@@ -701,45 +761,175 @@
 
         //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
         //     Para ajustar o "select", ajuste o comando sql em src/models
-        function atualizarGrafico(idAquario, dados) {
+        // function atualizarGrafico(idAlbum, dados) {
 
-            fetch(`/medidas/tempo-real/${idAquario}`, { cache: 'no-store' }).then(function (response) {
-                if (response.ok) {
-                    response.json().then(function (novoRegistro) {
+        //     fetch(`/medidas/tempo-real/${idAlbum}`, { cache: 'no-store' }).then(function (response) {
+        //         if (response.ok) {
+        //             response.json().then(function (novoRegistro) {
 
-                        console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
-                        console.log(dados);
+        //                 console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
+        //                 console.log(dados);
 
-                        for (i = 0; i < novoRegistro.length; i++) {
-                            var registro = novoRegistro[i];
-                            // tirando e colocando valores no gráfico
-                            dados.labels.shift(); // apagar o primeiro
-                            dados.labels.push(registro.musica);// incluir um novo momento
+        //                 for (i = 0; i < novoRegistro.length; i++) {
+        //                     var registro = novoRegistro[i];
+        //                     // tirando e colocando valores no gráfico
+        //                     dados.labels.shift(); // apagar o primeiro
+        //                     dados.labels.push(registro.musica);// incluir um novo momento
 
-                            dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-                            dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
+        //                     dados.datasets[0].data.shift();  // apagar o primeiro de umidade
+        //                     dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
 
-                            dados.datasets[1].data.shift();
-                            dados.datasets[1].data.push(registro.voto);
-                        }
+        //                     dados.datasets[1].data.shift();
+        //                     dados.datasets[1].data.push(registro.voto);
+        //                 }
 
-                        window.myChart.update();
+        //                 window.myChart.update();
 
-                        // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-                        proximaAtualizacao = setTimeout(() => atualizarGrafico(idAquario, dados), 2000);
-                    });
-                } else {
-                    console.error('Nenhum dado encontrado ou erro na API');
-                    // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-                    proximaAtualizacao = setTimeout(() => atualizarGrafico(idAquario, dados), 200000);
-                }
-            })
-                .catch(function (error) {
-                    console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-                });
+        //                 // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
+        //                 proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 2000);
+        //             });
+        //         } else {
+        //             console.error('Nenhum dado encontrado ou erro na API');
+        //             // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
+        //             proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 200000);
+        //         }
+        //     })
+        //         .catch(function (error) {
+        //             console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+        //         });
 
-        }
+        // }
 
     }
+
+    // fetch(`/medidas/albuns/${idAlbum}`, { cache: 'no-store' }).then(function (response) {
+    //     if (response.ok) {
+    //         response.json().then(function (resposta) {
+    //             console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+    //             plotarGrafico(resposta, idAlbum);
+
+    //         });
+    //     } else {
+    //         console.error('Nenhum dado encontrado ou erro na API');
+    //     }
+    // })
+    //     .catch(function (error) {
+    //         console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    //     });
+
+    // // Esta função plotarGrafico usa os dados capturados na função anterior para criar o gráfico
+    // // Configura o gráfico (cores, tipo, etc), materializa-o na página e,
+    // // A função plotarGrafico também invoca a função atualizarGrafico
+    // function plotarGrafico(resposta, idAlbum) {
+    //     console.log('iniciando plotagem do gráfico...');
+
+    //     var dados = {
+    //         labels: [],
+    //         datasets: [
+    //             {
+    //                 label: '',
+
+    //                 data: []
+    //             },
+    //             {
+    //                 yAxisID: 'y-totalpersonagens',
+    //                 label: 'Álbum Favorito',
+    //                 backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
+    //                 fill: true,
+    //                 data: []
+    //             }
+    //         ]
+    //     };
+
+    //     for (i = 0; i < resposta.length; i++) {
+    //         var registro = resposta[i];
+    //         dados.labels.push(registro.album);
+    //         dados.datasets[0].data.push(registro.album);
+    //         dados.datasets[1].data.push(registro.voto);
+    //         console.log(registro.voto)
+
+
+    //     }
+
+    //     console.log(JSON.stringify(dados));
+
+    //     var ctx = myChart.getContext('2d');
+    //     window.myChart = Chart.Bar(ctx, {
+    //         data: dados,
+    //         options: {
+    //             responsive: true,
+    //             animation: { duration: 900 },
+    //             hoverMode: 'index',
+    //             stacked: false,
+    //             title: {
+    //                 display: true,
+    //                 text: 'Os Personagens mais Escolhidos'
+    //             },
+
+    //             scales: {
+    //                 yAxes: [{
+    //                     type: 'linear',
+    //                     display: true,
+    //                     position: 'left',
+    //                     id: 'y-totalpersonagens',
+    //                     ticks: {
+    //                         beginAtZero: true,
+    //                         max: 50,
+    //                         min: 0
+    //                     }
+    //                 }, {
+    //                     display: false,
+    //                 }],
+    //             }
+    //         }
+    //     });
+
+
+
+    //     // Esta função atualizarGrafico atualiza o gráfico que foi renderizado na página,
+    //     // buscando a última medida inserida em tabela contendo as capturas,
+
+    //     //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
+    //     //     Para ajustar o "select", ajuste o comando sql em src/models
+    //     function atualizarGrafico(idAlbum, dados) {
+
+    //         fetch(`/medidas/tempo-real/${idAlbum}`, { cache: 'no-store' }).then(function (response) {
+    //             if (response.ok) {
+    //                 response.json().then(function (novoRegistro) {
+
+    //                     console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
+    //                     console.log(dados);
+
+    //                     for (i = 0; i < novoRegistro.length; i++) {
+    //                         var registro = novoRegistro[i];
+    //                         // tirando e colocando valores no gráfico
+    //                         dados.labels.shift(); // apagar o primeiro
+    //                         dados.labels.push(registro.musica);// incluir um novo momento
+
+    //                         dados.datasets[0].data.shift();  // apagar o primeiro de umidade
+    //                         dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
+
+    //                         dados.datasets[1].data.shift();
+    //                         dados.datasets[1].data.push(registro.voto);
+    //                     }
+
+    //                     window.myChart.update();
+
+    //                     // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
+    //                     proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 2000);
+    //                 });
+    //             } else {
+    //                 console.error('Nenhum dado encontrado ou erro na API');
+    //                 // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
+    //                 proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 200000);
+    //             }
+    //         })
+    //             .catch(function (error) {
+    //                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
+    //             });
+
+    //     }
+
+    // }
 
 </script>

@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="../assets/imagens_site/icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body  scroll="si" onload="updatePontos()">
 
     <div class="navbar">
         <h1 class="titulo">
@@ -432,7 +432,7 @@
             <button onclick="mostrar_respostas()">Respostas</button>
         </div>
         <div class="respostas_e_placar">
-            <table class="tabela" border="1">
+            <table id="infos" class="tabela" border="1">
                 <tr>
                     <thead>
                         <th>
@@ -442,48 +442,6 @@
                             Pontuação
                         </th>
                     </thead>
-                </tr>
-                <tr>
-                    <td>
-                        Murilo
-                    </td>
-                    <td>
-                        180 pontos
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Lucas
-                    </td>
-
-                    <td>
-                        140 pontos
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Marcelo
-                    </td>
-                    <td>
-                        100 pontos
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Henrique
-                    </td>
-                    <td>
-                        80 pontos
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Gustavo
-                    </td>
-                    <td>
-                        40 pontos
-                    </td>
-                </tr>
                 </tr>
             </table>
         </div>
@@ -521,7 +479,96 @@
     var pode_votar10 = true;
 
     function enviar(){
+        var fkUsuarioVar = Number(sessionStorage.ID_USUARIO);
+        var nome = sessionStorage.NOME_USUARIO;
+
         exibir2.innerHTML = `${pontos} pontos`
+
+        fetch("/usuarios/Quiz3", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            // crie um atributo que recebe o valor recuperado aqui
+            // Agora vá para o arquivo routes/usuario.j
+            fkUsuarioServer: fkUsuarioVar,
+            pontosServer: pontos
+        })
+    }).then(function (resposta) {
+
+
+        if (resposta.ok) {  
+            // Swal.fire({
+            //     // imageUrl: img,
+            //     imageWidth: 400,
+            //     background: '#FF4500',
+            //     confirmButtonText: 'DATTEBAYO!',
+            //     color: '#FFF',
+            //     // html: msg,
+            // })
+            // .then((result) => {
+            //     setTimeout(function () {
+                    window.location = "quiz_complete_musica.html";
+                // }, 1000);
+            // })
+        } else {
+            throw ("Houve um erro ao tentar realizar o cadastro!");
+        }
+    }).catch(function (resposta) {
+        console.log(`#ERRO: ${resposta}`);
+    });
+
+    return false;
+    }
+
+    function updatePontos() {
+        //aguardar();
+        fetch("/usuarios/listarPontos3").then(function (resposta) {
+            if (resposta.ok) {
+                if (resposta.status == 204) {
+                    throw "Nenhum resultado encontrado!!";
+                }
+                resposta.json().then(function (resposta) {
+                    console.log("Dados recebidos: ", JSON.stringify(resposta));
+
+                    var table = document.getElementById("infos");
+                    for (var contador = 0; contador < resposta.length; contador++) {
+                        var publicacao = resposta[contador];
+                        // criando e manipulando elementos do HTML via JavaScript
+
+                           console.log(publicacao)
+                        // // cria um novo elemento div
+                        // e dá à ele conteúdo
+                        var tdNome = document.createElement("td");
+                        var tdpontuacao = document.createElement("td");
+                        var tableTr = document.createElement("tr");
+                        var hr = document.createElement("hr");
+
+                        tdNome.className = "text"
+                        tdpontuacao.className = "text"
+
+                       
+                        tdNome.innerHTML = `${publicacao.nome}`;
+                        tdpontuacao.innerHTML = `${publicacao.pontuacao} pontos`;
+            
+
+                        // (APPENDCHILD) Cria um novo elemento de parágrafo e adiciona-o ao final do documento
+
+                        tableTr.appendChild(tdNome);
+                        tableTr.appendChild(tdpontuacao);
+                        table.appendChild(tableTr);
+                    }
+
+                    // finalizarAguardar();
+                });
+            } else {
+                swal("Ops", "Houve um erro na API!", "warning");
+            }
+        }).catch(function (resposta) {
+            console.error(resposta);
+            // finalizarAguardar();
+        });
     }
 
     ///////////////////////////////////////////////////////////////////////////////////

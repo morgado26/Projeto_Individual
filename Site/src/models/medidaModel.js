@@ -1,6 +1,6 @@
 var database = require("../database/config");
 
-function buscarUltimasMedidas(idAquario, limite_linhas) {
+function buscarUltimasMedidas(xpto) {
 
     instrucaoSql = ''
 
@@ -8,13 +8,21 @@ function buscarUltimasMedidas(idAquario, limite_linhas) {
         instrucaoSql = `SELECT COUNT(musica_album.musica) as voto, musica_album.musica as musica
         FROM musica_album group by musica_album.musica order by voto desc limit 5;`;
     } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
-        instrucaoSql = `SELECT COUNT(musica_album.musica) as voto, musica_album.musica as musica
-        FROM musica_album group by musica_album.musica order by voto desc limit 5;`;
-    } else {
-        console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
-        return
-    }
+        if(xpto == 1){
+            instrucaoSql = `SELECT COUNT(musica_album.musica) as voto, musica_album.musica as musica
+            FROM musica_album group by musica_album.musica order by voto desc limit 5;`;
+        } 
+        else if(xpto == 2){
+            instrucaoSql = `SELECT COUNT(musica_album.album) as voto, musica_album.album as album
+            FROM musica_album group by musica_album.album order by voto desc limit 5;`
+        }
 
+       }
+        else {
+            console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
+            return
+        }
+    
     console.log("Executando a instrução SQL: \n" + instrucaoSql);
     return database.executar(instrucaoSql);
 }
@@ -49,8 +57,29 @@ function buscarMedidasEmTempoReal(idAquario) {
     return database.executar(instrucaoSql);
 }
 
+function albuns(idAlbum) {
+
+    instrucaoSql = ''
+
+    if (process.env.AMBIENTE_PROCESSO == "producao") {
+        instrucaoSql = `SELECT COUNT(musica_album.album) as voto, musica_album.album as album
+        FROM musica_album group by musica_album.album order by voto desc limit 5;`;
+
+    } else if (process.env.AMBIENTE_PROCESSO == "desenvolvimento") {
+        instrucaoSql = `SELECT COUNT(musica_album.album) as voto, musica_album.album as album
+        FROM musica_album group by musica_album.album order by voto desc limit 5;`;
+    } else {
+        console.log("\nO AMBIENTE (produção OU desenvolvimento) NÃO FOI DEFINIDO EM app.js\n");
+        return
+    }
+
+    console.log("Executando a instrução SQL: \n" + instrucaoSql);
+    return database.executar(instrucaoSql);
+}
+
 
 module.exports = {
     buscarUltimasMedidas,
-    buscarMedidasEmTempoReal
+    buscarMedidasEmTempoReal,
+    albuns,
 }

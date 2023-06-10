@@ -24,4 +24,36 @@ router.post("/preferida", function (req, res) {
     usuarioController.preferida(req, res);
 })
 
+router.post("/Quiz1", function (req, res) {
+    usuarioController.Quiz1(req, res);
+})
+
+router.get("/listarPontos", function (req, res) {
+    usuarioController.listarPontos(req, res);
+});
+
+router.post("/Quiz2", function (req, res) {
+    usuarioController.Quiz2(req, res);
+})
+
+router.get("/listarPontos2", function (req, res) {
+    usuarioController.listarPontos2(req, res);
+});
+
+router.post("/Quiz3", function (req, res) {
+    usuarioController.Quiz3(req, res);
+})
+
+router.get("/listarPontos3", function (req, res) {
+    usuarioController.listarPontos3(req, res);
+});
+
+router.post("/Quiz4", function (req, res) {
+    usuarioController.Quiz4(req, res);
+})
+
+router.get("/listarPontos4", function (req, res) {
+    usuarioController.listarPontos4(req, res);
+});
+
 module.exports = router;

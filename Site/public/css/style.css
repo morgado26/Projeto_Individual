@@ -1159,19 +1159,34 @@ body::-webkit-scrollbar {
 
 .container_graficos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 100px;
     background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 100px;
 }
 
 #myChart{
     height: 400px;
-    width: 450px;
+    width: 550px;
 }
 
 #myChart2{
     height: 400px;
-    width: 450px;
+    width: 550px;
+}
+
+.chart{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 22.5vh;
+}
+
+.chart2{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 22.5vh;
 }
 
 .mensagem_graficos {

@@ -43,9 +43,97 @@ function preferida(musica, album) {
     return database.executar(instrucao);
 }
 
+function Quiz1(fkUsuario, pontos) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n Quiz1()", fkUsuario, pontos);
+
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.  +9*
+    console.log(fkUsuario);
+    var instrucao = `
+    INSERT INTO Quiz1 (pontuacao, fkUsuario ) VALUES (${pontos}, ${fkUsuario});
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function listarPontos() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listarPontuacao()");
+    var instrucao = `SELECT nome, pontuacao FROM Quiz1 JOIN usuario ON fkUsuario = idUsuario ORDER BY  pontuacao DESC limit 5;`;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function Quiz2(fkUsuario, pontos) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n Quiz2()", fkUsuario, pontos);
+
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.  +9*
+    console.log(fkUsuario);
+    var instrucao = `
+    INSERT INTO Quiz2 (pontuacao, fkUsuario ) VALUES (${pontos}, ${fkUsuario});
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function listarPontos2() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listarPontuacao()");
+    var instrucao = `SELECT nome, pontuacao FROM Quiz2 JOIN usuario ON fkUsuario = idUsuario ORDER BY  pontuacao DESC limit 5;`;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function Quiz3(fkUsuario, pontos) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n Quiz3()", fkUsuario, pontos);
+
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.  +9*
+    console.log(fkUsuario);
+    var instrucao = `
+    INSERT INTO Quiz3 (pontuacao, fkUsuario ) VALUES (${pontos}, ${fkUsuario});
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function listarPontos3() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listarPontuacao()");
+    var instrucao = `SELECT nome, pontuacao FROM Quiz3 JOIN usuario ON fkUsuario = idUsuario ORDER BY  pontuacao DESC limit 5;`;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function Quiz4(fkUsuario, pontos) {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n Quiz4()", fkUsuario, pontos);
+
+    // Insira exatamente a query do banco aqui, lembrando da nomenclatura exata nos valores
+    //  e na ordem de inserção dos dados.  +9*
+    console.log(fkUsuario);
+    var instrucao = `
+    INSERT INTO Quiz4 (pontuacao, fkUsuario ) VALUES (${pontos}, ${fkUsuario});
+    `;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
+function listarPontos4() {
+    console.log("ACESSEI O USUARIO MODEL \n \n\t\t >> Se aqui der erro de 'Error: connect ECONNREFUSED',\n \t\t >> verifique suas credenciais de acesso ao banco\n \t\t >> e se o servidor de seu BD está rodando corretamente. \n\n function listarPontuacao()");
+    var instrucao = `SELECT nome, pontuacao FROM Quiz4 JOIN usuario ON fkUsuario = idUsuario ORDER BY  pontuacao DESC limit 5;`;
+    console.log("Executando a instrução SQL: \n" + instrucao);
+    return database.executar(instrucao);
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    preferida
+    preferida,
+    Quiz1,
+    listarPontos,
+    Quiz2,
+    listarPontos2,
+    Quiz3,
+    listarPontos3,
+    Quiz4,
+    listarPontos4
 };

@@ -92,7 +92,7 @@
 
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
-                    sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.ID_USUARIO = json.idUsuario;
 
                     setTimeout(function () {
                         window.location = "inicio.html";
@@ -102,6 +102,7 @@
 
             } else {
 
+                swal("Ops", "Houve um erro ao tentar realizar o login!", "warning");
                 console.log("Houve um erro ao tentar realizar o login!");
 
                 resposta.text().then(texto => {

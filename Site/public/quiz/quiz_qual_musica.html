@@ -378,12 +378,11 @@
 
         if (resposta.ok) {  
             Swal.fire({
-                // imageUrl: img,
-                imageWidth: 400,
                 background: '#FF4500',
-                confirmButtonText: 'DATTEBAYO!',
-                color: '#FFF',
-                // html: msg,
+                confirmButtonText: 'Obrigado por Jogar!',
+                confirmButtonColor: '#000000d0',
+                timer: 2000,
+                color: '#FFF'
             })
             .then((result) => {
                 setTimeout(function () {

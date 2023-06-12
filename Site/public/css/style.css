@@ -1166,13 +1166,13 @@ body::-webkit-scrollbar {
 }
 
 #myChart{
-    height: 400px;
-    width: 550px;
+    height: 500px;
+    width: 700px;
 }
 
 #myChart2{
-    height: 400px;
-    width: 550px;
+    height: 500px;
+    width: 700px;
 }
 
 .chart{

@@ -519,57 +519,6 @@
         }
     }
 
-    // const labels = [
-    //     'Musica1',
-    //     'Musica2',
-    //     'Musica3',
-    //     'Musica4',
-    //     'Musica5'
-    // ];
-
-    // const data = {
-    //     labels: labels,
-    //     datasets: [{
-    //         data: [30, 29, 28, 25, 22],
-    //         backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
-    //         borderColor: 'white',
-    //     }
-    //     ]
-    // };
-
-    //     const labels2 = [
-    //         'Musica1',
-    //         'Musica2',
-    //         'Musica3',
-    //         'Musica4',
-    //         'Musica5'
-    //     ];
-
-    //     const data2 = {
-    //         labels: labels2,
-    //         datasets: [{
-    //             data: [22, 24, 27, 23, 20],
-    //             backgroundColor: ['rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(0,0,255)', 'rgb(255,255,0)', 'rgb(99,33,99)'],
-    //             borderColor: 'white',
-    //         }]
-    //     };
-
-
-
-    //     const config2 = {
-    //         type: 'pie',
-    //         data: data2,
-    //         options: {}
-    //     };
-    //
-
-
-
-    //     const myChart2 = new Chart(
-    //         document.getElementById('myChart2'),
-    //         config2
-    //     );
-
 
     var lista_imagens = ["<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home.jpg>",
         "<img style='height: 620px; width: 94%;margin-left: 43px;'src=assets/imagens_site/imagem_home2.jpg>",
@@ -581,10 +530,6 @@
         var numero_aleatorio = parseInt(Math.random() * lista_imagens.length);
         imagem_home.innerHTML = `${lista_imagens[numero_aleatorio]}`
     }
-
-    // b_usuario.innerHTML = sessionStorage.NOME_USUARIO
-
-    // let proximaAtualizacao;
 
     window.onload = criarGraficos();
 
@@ -644,6 +589,9 @@
                     }
                 ]
             };
+
+            // Tirar a legenda dos gráficos:
+            Chart.defaults.global.legend.display = false;
 
 
 
@@ -720,216 +668,6 @@
 
         }
 
-
-
-
-        // var ctx = myChart.getContext('2d');
-        // window.myChart = Chart.Bar(ctx, {
-        //     data: dados,
-        //     options: {
-        //         responsive: true,
-        //         animation: { duration: 900 },
-        //         hoverMode: 'index',
-        //         stacked: true,
-        //         title: {
-        //             display: true,
-        //             text: 'Os Personagens mais Escolhidos'
-        //         },
-
-        //         scales: {
-        //             yAxes: [{
-        //                 type: 'pie',
-        //                 display: true,
-        //                 position: 'left',
-        //                 id: 'y-totalpersonagens',
-        //                 ticks: {
-        //                     beginAtZero: true,
-        //                     max: 50,
-        //                     min: 0
-        //                 }
-        //             }, {
-        //                 display: false,
-        //             }],
-        //         }
-        //     }
-        // });
-
-
-
-        // Esta função atualizarGrafico atualiza o gráfico que foi renderizado na página,
-        // buscando a última medida inserida em tabela contendo as capturas, 
-
-        //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
-        //     Para ajustar o "select", ajuste o comando sql em src/models
-        // function atualizarGrafico(idAlbum, dados) {
-
-        //     fetch(`/medidas/tempo-real/${idAlbum}`, { cache: 'no-store' }).then(function (response) {
-        //         if (response.ok) {
-        //             response.json().then(function (novoRegistro) {
-
-        //                 console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
-        //                 console.log(dados);
-
-        //                 for (i = 0; i < novoRegistro.length; i++) {
-        //                     var registro = novoRegistro[i];
-        //                     // tirando e colocando valores no gráfico
-        //                     dados.labels.shift(); // apagar o primeiro
-        //                     dados.labels.push(registro.musica);// incluir um novo momento
-
-        //                     dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-        //                     dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
-
-        //                     dados.datasets[1].data.shift();
-        //                     dados.datasets[1].data.push(registro.voto);
-        //                 }
-
-        //                 window.myChart.update();
-
-        //                 // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-        //                 proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 2000);
-        //             });
-        //         } else {
-        //             console.error('Nenhum dado encontrado ou erro na API');
-        //             // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-        //             proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 200000);
-        //         }
-        //     })
-        //         .catch(function (error) {
-        //             console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-        //         });
-
-        // }
-
     }
-
-    // fetch(`/medidas/albuns/${idAlbum}`, { cache: 'no-store' }).then(function (response) {
-    //     if (response.ok) {
-    //         response.json().then(function (resposta) {
-    //             console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
-    //             plotarGrafico(resposta, idAlbum);
-
-    //         });
-    //     } else {
-    //         console.error('Nenhum dado encontrado ou erro na API');
-    //     }
-    // })
-    //     .catch(function (error) {
-    //         console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-    //     });
-
-    // // Esta função plotarGrafico usa os dados capturados na função anterior para criar o gráfico
-    // // Configura o gráfico (cores, tipo, etc), materializa-o na página e,
-    // // A função plotarGrafico também invoca a função atualizarGrafico
-    // function plotarGrafico(resposta, idAlbum) {
-    //     console.log('iniciando plotagem do gráfico...');
-
-    //     var dados = {
-    //         labels: [],
-    //         datasets: [
-    //             {
-    //                 label: '',
-
-    //                 data: []
-    //             },
-    //             {
-    //                 yAxisID: 'y-totalpersonagens',
-    //                 label: 'Álbum Favorito',
-    //                 backgroundColor: ['#FF1493', '#FFFF00', '#FF4500', '#00FF00', '#4B0082', '#0000FF', '#FFF'],
-    //                 fill: true,
-    //                 data: []
-    //             }
-    //         ]
-    //     };
-
-    //     for (i = 0; i < resposta.length; i++) {
-    //         var registro = resposta[i];
-    //         dados.labels.push(registro.album);
-    //         dados.datasets[0].data.push(registro.album);
-    //         dados.datasets[1].data.push(registro.voto);
-    //         console.log(registro.voto)
-
-
-    //     }
-
-    //     console.log(JSON.stringify(dados));
-
-    //     var ctx = myChart.getContext('2d');
-    //     window.myChart = Chart.Bar(ctx, {
-    //         data: dados,
-    //         options: {
-    //             responsive: true,
-    //             animation: { duration: 900 },
-    //             hoverMode: 'index',
-    //             stacked: false,
-    //             title: {
-    //                 display: true,
-    //                 text: 'Os Personagens mais Escolhidos'
-    //             },
-
-    //             scales: {
-    //                 yAxes: [{
-    //                     type: 'linear',
-    //                     display: true,
-    //                     position: 'left',
-    //                     id: 'y-totalpersonagens',
-    //                     ticks: {
-    //                         beginAtZero: true,
-    //                         max: 50,
-    //                         min: 0
-    //                     }
-    //                 }, {
-    //                     display: false,
-    //                 }],
-    //             }
-    //         }
-    //     });
-
-
-
-    //     // Esta função atualizarGrafico atualiza o gráfico que foi renderizado na página,
-    //     // buscando a última medida inserida em tabela contendo as capturas,
-
-    //     //     Se quiser alterar a busca, ajuste as regras de negócio em src/controllers
-    //     //     Para ajustar o "select", ajuste o comando sql em src/models
-    //     function atualizarGrafico(idAlbum, dados) {
-
-    //         fetch(`/medidas/tempo-real/${idAlbum}`, { cache: 'no-store' }).then(function (response) {
-    //             if (response.ok) {
-    //                 response.json().then(function (novoRegistro) {
-
-    //                     console.log(`Dados recebidos Atualizar  Graficos: ${JSON.stringify(novoRegistro)}`);
-    //                     console.log(dados);
-
-    //                     for (i = 0; i < novoRegistro.length; i++) {
-    //                         var registro = novoRegistro[i];
-    //                         // tirando e colocando valores no gráfico
-    //                         dados.labels.shift(); // apagar o primeiro
-    //                         dados.labels.push(registro.musica);// incluir um novo momento
-
-    //                         dados.datasets[0].data.shift();  // apagar o primeiro de umidade
-    //                         dados.datasets[0].data.push(registro.musica); // incluir uma nova medida de umidade
-
-    //                         dados.datasets[1].data.shift();
-    //                         dados.datasets[1].data.push(registro.voto);
-    //                     }
-
-    //                     window.myChart.update();
-
-    //                     // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-    //                     proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 2000);
-    //                 });
-    //             } else {
-    //                 console.error('Nenhum dado encontrado ou erro na API');
-    //                 // Altere aqui o valor em ms se quiser que o gráfico atualize mais rápido ou mais devagar
-    //                 proximaAtualizacao = setTimeout(() => atualizarGrafico(idAlbum, dados), 200000);
-    //             }
-    //         })
-    //             .catch(function (error) {
-    //                 console.error(`Erro na obtenção dos dados p/ gráfico: ${error.message}`);
-    //             });
-
-    //     }
-
-    // }
 
 </script>

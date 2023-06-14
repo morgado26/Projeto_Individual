@@ -331,11 +331,14 @@
     </div>
 
     <div class="container_graficos">
+        
         <div class="chart">
+            <h1>Músicas Favoritas</h1> 
             <canvas id="myChart"></canvas>
         </div>
-
+        
         <div class="chart2">
+            <h1>Álbuns Favoritos</h1>
             <canvas id="myChart2"></canvas>
         </div>
     </div>
@@ -569,11 +572,11 @@
 
             var dados = {
                 labels: labels,
-                    options:{
-                        legend:{
-                            display:false
-                        }
-                    },
+                options: {
+                    legend: {
+                        display: false
+                    }
+                },
                 datasets: [
                     {
                         label: '',
@@ -609,7 +612,8 @@
 
             const config = {
                 type: 'pie',
-                data: dados
+                data: dados,
+
             };
 
 
@@ -623,7 +627,7 @@
             console.log(JSON.stringify(dados));
 
 
-        } else if(xpto==2){
+        } else if (xpto == 2) {
             let labels2 = [];
 
             var dados2 = {
@@ -641,8 +645,10 @@
                         fill: true,
                         data: []
                     }
-                ]
+                ],
             };
+
+
 
             for (i = 0; i < resposta.length; i++) {
                 var registro = resposta[i];
